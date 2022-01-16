@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroJays</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- The font is generated from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/sky_background.jfif);
+            background-repeat: repeat-y;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <!-- able to click on the logo and go to main page-->
+            <a href="index.html"><img src="images/astrojays_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- Add some links here-->
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SUBSYSTEMS</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">EVENTS</a></li>
+                    <li><a href="">OUR TEAM</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>AstroJays Rocketry </h1>
+            <p> AstroJays Rocketry is an interdisciplinary high-powered rocketry team of students from the Johns
+                Hopkins University, <br> advised by the JHU Mechanical Engineering Department. </p>
+            <a href="" class="hero-btn">Contact Us</a>
+        </div>
+
+    </section>
+
+    <!-- What We Do -->
+    <section class="what_we_do">
+        <div class="container">
+            <div class="q-a-text-box">
+                <div class="imageContainerLeft">
+                    <img style="vertical-align:middle" src="images/First_Launch_Best_Shots/rocket_on_rail_cropped.JPG"
+                        alt="Positioning level 1 certificate rocket on launch rail.">
+                </div>
+                <h2>What is high-powered rocketry?</h2>
+                <p> High powered rockets have the capacity to travel miles up into the atmosphere, and must be
+                    engineered and built to survive the harsh aerodynamic, inertial, and internal propulsive loads
+                    required to launch rockets to these extreme altitudes. <br>
+                    It requires complex, well-designed remote operated control systems, radio-based telemetry, reliable
+                    and robust recovery systems, and a great team of rocket scientists and supersonic fluids analysts
+                    to hit our desired flight trajectories. <br>
+                    This is real-world aerospace engineering, designing some of the most advanced amateur
+                    rocket-powered launch vehicles in the world. <br>
+                </p>
+
+                <div class="padding_gap">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="imageContainerRight">
+                    <img style="vertical-align:middle" src="images/First_Launch_Best_Shots/sasha_lv2_launch.JPG"
+                        alt="Sasha's level 2 rocket launch in November, 2021.">
+                </div>
+                <h2>Our Mission</h2>
+                <p> Our mission is to improve upon an innovative science and engineering community for rocket and space
+                    science enthusiasts at Johns Hopkins, and to provide more opportunities in aerospace and related
+                    disciplines for students of all levels. The diversity of work that we do allows students from all
+                    over campus to participate and learn more about the exciting field of rocketry.
+                </p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
