@@ -74,17 +74,23 @@
                 </div>
             </div>
 
+            <!-- Concact email button-->
 
+
+            <!--Contact form not used because the form php isn't working. -->
         <div class="contact-col">
-            <form action="form_handler.php" method="post">
-                <input type="text" placeholder="Enter your name" required>
-                <input type="email" placeholder="Enter email address" required>
-                <input type="text" placeholder="Enter the subject" required>
-                <textarea rows="8" placeholder="Message" required></textarea>
-                <button type="submit" class="hero-btn blue-btn"> Send Message </button>
+            <form action="mailto:hopkinsrocketry@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter the subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn blue-btn"> Send Message </button> 
+                <button type="reset" class="hero-btn blue-btn-right"> Reset</button> 
             </form>
         </div>
         </div>
+    
+
     </section>
 
     <!-- Footer -->

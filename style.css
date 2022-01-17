@@ -468,6 +468,14 @@ h3 {
     color: #5091c6;
 }
 
+/* This is for the email reset button */
+.blue-btn-right {
+    border: 1px solid #5091c6;
+    background: transparent;
+    color: #5091c6;
+    margin-left: 20px;
+}
+
 .blue-btn:hover {
     color: #fff;
 }

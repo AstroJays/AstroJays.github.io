@@ -1,3 +1,6 @@
+// This php file isn't used. For a contact form.
+
+
 <?php
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
