@@ -7,7 +7,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/dark_sky_background.jpg);
+    background-image: linear-gradient(rgba(14, 32, 95, 0.68), rgba(4, 9, 30, 0.205)), url(images/index/home_background.jpeg.crdownload);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -15,8 +15,7 @@
 
 nav {
     display: flex;
-    padding: 2% 6%;
-
+    padding: 2% 4%;
     justify-content: space-between;
     align-items: center;
 }
@@ -29,29 +28,29 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
-
 }
 
 /* Horizontal styling of the navigation bar. */
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 16px;
     position: relative;
 }
 
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+
 }
 
 .nav-links ul li::after {
     content: '';
     /*hide the bar until it's clicked */
     width: 0%;
-    height: 2px;
-    background: #5091c6;
+    height: 3px;
+    background: #50aefa;
     display: block;
     margin: auto;
     transition: 0.3s;
