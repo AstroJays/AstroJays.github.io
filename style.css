@@ -7,7 +7,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(14, 32, 95, 0.68), rgba(4, 9, 30, 0.205)), url(images/index/home_background.jpeg.crdownload);
+    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -60,6 +60,52 @@ nav img {
     width: 100%;
 }
 
+/* Dropdown menus in nav bar */
+.dropbtn {
+    background-color: transparent;
+    color: #fff;
+    padding: 0px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(75, 138, 246, 0.92);
+    min-width: 130px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #1f3160
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+
+/* Normal Text boxes */
 .text-box {
     width: 90%;
     color: #fff;
@@ -76,39 +122,51 @@ nav img {
 
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 16px;
-    line-height: 25px;
-    /* https://stackoverflow.com/questions/48370138/how-i-can-set-margin-between-lines-in-one-paragraph */
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 27px;
     padding: 3px;
     color: #fff;
 }
 
+/* the "contact us" button */
 .hero-btn {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: 400px;
     background: transparent;
     position: relative;
     cursor: pointer;
 }
 
 .hero-btn:hover {
-    border: 1px solid #5091c6;
     background: #5091c6;
     transition: 0.4s;
 }
 
+/* Hide the menu icons when in large screen */
 nav .fa {
     display: none;
 }
 
-/* accomodation for small device */
+/* Window accomodation for small device */
 @media(max-width: 700px) {
     .text-box h1 {
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    .hero-btn {
+        font-size: 16px;
+        font-weight: 200px;
+        border: 1px solid #fff;
     }
 
     .nav-links ul li {
@@ -116,7 +174,8 @@ nav .fa {
     }
 
     .nav-links {
-        position: fixed; /* Change this for better google map display on small screen! */
+        position: fixed;
+        /* Change this for better google map display on small screen! */
         background: #5091c6;
         height: 100vh;
         width: 200px;
@@ -127,18 +186,19 @@ nav .fa {
         transition: 0.4s;
     }
 
-
     /* The cross icon for the screen menu */
     nav .fa {
         display: block;
         color: #fff;
         margin: 10px;
+
         font-size: 22px;
         cursor: pointer;
     }
 
     .nav-links ul {
         padding: 20px;
+        margin-top: 50px;
     }
 }
 
@@ -579,7 +639,7 @@ h3 {
 }
 
 .contact-col div .fa {
-    font-size :28px;
+    font-size: 28px;
     color: #5091c6;
     margin: 10px;
     margin-right: 30px;
@@ -593,7 +653,7 @@ h3 {
     font-size: 20px;
     margin-bottom: 5px;
     font-weight: 600;
-    color:rgba(43, 105, 156);
+    color: rgba(43, 105, 156);
 }
 
 .contact-col input, .contact-col textarea {
@@ -604,4 +664,3 @@ h3 {
     border: 1px solid #5091c6;
     box-sizing: border-box;
 }
-
