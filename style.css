@@ -11,18 +11,36 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    margin-bottom: 84px;
+}
+
+.sub-header {
+    height: 65vh;
+    width: 100%;
+    background-image: linear-gradient(#2f5777b4, #2f5777b4), url(images/sample/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: -25px;
+    font-size: 68px;
 }
 
 nav {
     display: flex;
-    padding: 2% 4%;
+    padding: 2% 6%;
+    margin-top: -30px;
     justify-content: space-between;
     align-items: center;
 }
 
 /* We change the size of logo in the syle sheet so that it works with all images. */
 nav img {
-    width: 150px;
+    width: 120px;
+    margin-top: 20px;
 }
 
 .nav-links {
@@ -117,7 +135,8 @@ nav img {
 }
 
 .text-box h1 {
-    font-size: 68px;
+    margin-top: 30px;
+    font-size: 76px;
 }
 
 .text-box p {
@@ -464,15 +483,24 @@ h3 {
     padding: 30px 0;
 }
 
-.footer h4 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
+.footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(75, 138, 246, 0.53);
+    text-align: center;
+    color: rgb(9, 28, 72);
+    padding: 12px 0px 20px 0px;
+    z-index: 1;
+}
+
+.footer p {
+    color: rgb(9, 28, 72);
 }
 
 .icons .fa {
     color: rgba(4, 9, 30, 0.7);
-    margin: 0 13px;
+    margin: 0 18px;
     cursor: pointer;
     padding: 18px 0;
 }
@@ -482,20 +510,6 @@ h3 {
 }
 
 
-/* About us Page */
-.sub-header {
-    height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(#2f5777b4, #2f5777b4), url(images/sample/background.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-}
-
-.sub-header h1 {
-    margin-top: 10px;
-}
 
 .about-us {
     width: 80%;
