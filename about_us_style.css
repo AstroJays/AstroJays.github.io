@@ -105,9 +105,8 @@ a.external-link:hover {
     background-size: cover;
   }
 
-/* The text strips for milestone. */
 .parallax-text-box {
-    min-height:350px;
+    min-height:300px;
     background-color:rgb(6, 38, 59);
     font-size:36px;
 }
