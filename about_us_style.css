@@ -26,54 +26,48 @@
 
 /* Section container */
 .section-box {
+    height: 530px;
     width: 90%;
     margin: auto;
     text-align: left;
-    background-color: blue;
     z-index: 1;
     margin-top: 60px;
-   
+    border-top: 3px solid #50aefa;
 }
 
 .section-box img {
     width: 100%;
-    margin-top: 50px;
 }
 
 .section-box h1 {
-    font-size: 48px;
-    color: rgba(10, 47, 136, 0.85);
-    padding-bottom: 0px;
+    font-size: 64px;
+    color: rgba(255, 255, 255, 0.896);
+    margin-top: -28px;
 }
 
 .section-box p {
     font-size: 20px;
-    color: rgba(10, 47, 136, 0.85);
-    line-height: 30px;
+    color: rgba(255, 255, 255, 0.696);
+    line-height: 32px;
+    margin-left: -8px;
+    margin-top: -10px;
     padding-bottom: 20px;
-    padding-top: 0px;
 }
 
 .content{
-    width: 62%;
-   
+    width: 54%;
     min-height: 300px;
     word-wrap: break-word;
     position: relative;
     margin-top: 50px;
-    background-color: brown;
 }
 
 /* wiki image column */
-.image {
-    width: 34%;
-    float: left;
-    height: 500px;
-    word-wrap: break-word;
-    margin-top: 40px;
-
+.image-box {
+    width: 42%;
+    margin-top: 50px;
+    max-height: 200px;
 }
-
 
 #left {
     float: left;
@@ -83,8 +77,6 @@
     float: right;
 }
 
-
-
-#section-gap {
+#big-gap {
     margin-top: 100px;
 }
