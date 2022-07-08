@@ -23,11 +23,20 @@
 }
 
 .section-box h2 {
-    font-size: 24px;
+    font-size: 26px;
     color: #50aefa;
     margin-top: -8px;
     margin-bottom: 4px;
 }
+
+.section-box h3 {
+    text-align: left;
+    font-size: 18px;
+    color: #50aefa;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+
 
 
 .section-box p {
@@ -65,4 +74,21 @@
 
 #big-gap {
     margin-top: 100px;
+}
+
+/* For all the external links to competition websites */
+a.external-link:link {
+    color: rgba(168, 194, 255, 0.85);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.external-link:visited {
+    color: rgba(168, 194, 255, 0.85);
+    font-weight: bold;
+}
+
+a.external-link:hover {
+    color: rgba(255, 8, 222, 0.82);
+    transition: 0.6s;
 }
