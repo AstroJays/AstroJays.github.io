@@ -10,6 +10,7 @@
     z-index: 1;
     margin-top: 60px;
     border-top: 3px solid #50aefa;
+    
 }
 
 .section-box img {
@@ -20,7 +21,8 @@
     font-size: 64px;
     color: rgba(255, 255, 255, 0.896);
     margin-top: -28px;
-    margin-left: -10px;
+    
+    margin-left: 0px;
 }
 
 .section-box h2 {
@@ -53,6 +55,14 @@
     word-wrap: break-word;
     position: relative;
     margin-top: 50px;
+}
+
+.content li{
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 32px;
+    font-size: 20px;
+    word-wrap: break-word;
+    position: relative;
 }
 
 /* wiki image column */
