@@ -260,9 +260,9 @@ nav .fa {
 /* Scrollable web element */
 .reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(90px);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 0.7s all ease;
 }
 
 .reveal.active {
@@ -318,7 +318,7 @@ nav .fa {
 
 /* Some buttons on the home screen */
 .home-options-grid {
-    margin-top: -230px;
+    margin-top: -30px;
     height: 220px;
     border-bottom: 3px solid #50aefa;
     width: 90%;
