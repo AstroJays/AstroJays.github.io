@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-  
+
 }
 
 html body {
@@ -24,7 +24,7 @@ html body {
 .sub-header {
     height: 75vh;
     width: 100%;
-    background-image: linear-gradient(#081935b4, #2f5777b4), url(images/index/home_background.jpg);
+    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -32,7 +32,7 @@ html body {
 }
 
 .sub-header h1 {
-    margin-top: -10px;
+    margin-top: 50px;
     font-size: 64px;
     overflow: auto;
 }
@@ -49,11 +49,14 @@ html body {
 }
 
 nav {
+    height: 50px;
+    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(21, 76, 139, 0.671)), url(images/index/home_background.jpg);
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 4%;
     margin-top: -30px;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 /* We change the size of logo in the syle sheet so that it works with all images. */
@@ -72,6 +75,7 @@ nav img {
     list-style: none;
     display: inline-block;
     padding: 8px 16px;
+    margin-top: 32px;
     position: relative;
 }
 
@@ -140,6 +144,18 @@ nav img {
     display: block;
     opacity: 1;
 }
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    width: calc(100% - 101px) !important;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+    padding-top: 102px;
+}
+
 
 /* Normal Text boxes */
 .text-box {
@@ -523,7 +539,7 @@ h3 {
 
 .contact-col div .fa {
     font-size: 28px;
-    color:rgba(240, 255, 255, 0.89);
+    color: rgba(240, 255, 255, 0.89);
     margin: 10px;
     margin-right: 30px;
 }
@@ -537,7 +553,7 @@ h3 {
     font-size: 20px;
     margin-bottom: 5px;
     font-weight: 600;
-    color:rgba(240, 255, 255, 0.89);
+    color: rgba(240, 255, 255, 0.89);
 }
 
 .contact-col input, .contact-col textarea {

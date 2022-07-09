@@ -19,13 +19,14 @@
 
 <body>
     <section class="header">
-        <nav>
+        <nav id="myHeader">
             <!-- able to click on the logo and go to main page-->
-            <a href="index.html"><img src="images/astrojays_logo.png"></a>
+            <!--<a href="index.html"><img src="images/astrojays_logo.png"></a> -->
             <div class="nav-links" id="navLinks">
                 <!-- Add some links here-->
                 <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
                 <ul>
+                    <li> <a href="index.html">Home </a></li>
                     <li>
                         <div class="dropdown">
                             <button class="dropbtn">ABOUT US &#11167 </button>
@@ -64,50 +65,53 @@
         </div>
 
     </section>
-    
-        <!-- What is High Powered Rocketry -->
-        <div class="section-box" style="height:440px;">
-            <div class="content" id="right" style="width: 55%;">
-                <h1 style="font-size:34px; padding-bottom: 15px; margin-left: -5px;">What is high-powered rocketry?</h1>
-                <p style="font-size: 16px; line-height: 26px; color: rgba(255, 255, 255, 0.897);"> High powered rockets have the capacity to travel miles up into the atmosphere, and must be
-                    engineered and built to survive the harsh aerodynamic, inertial, and internal propulsive loads
-                    required to launch rockets to these extreme altitudes. <br>
-                    <br>
-                    It requires complex, well-designed remote operated control systems, radio-based telemetry, reliable
-                    and robust recovery systems, and a great team of rocket scientists and supersonic fluids analysts
-                    to hit our desired flight trajectories. <br>
-                    <br>
-                    This is real-world aerospace engineering, designing some of the most advanced amateur
-                    rocket-powered launch vehicles in the world. <br>
-                </p>
-            </div>
 
-            <div class="image-box" id="left" style="width: 43%;  margin-top: 35px;" >
-                <img style="vertical-align:middle" style="height: 390px; margin-top: -30px;" src="images/index/rocket_on_rail_cropped.png"
-                    alt="Positioning level 1 certificate rocket on launch rail.">
-            </div>
-        </div>
-   
-    <!-- Our Mission -->
-    <div class="section-box" style="height:400px;">
-        <div class="content" id="left" style="width: 43%;">
-            <h1 style="font-size:34px; padding-bottom: 15px; margin-left: -3px;">Our Mission</h1>
-            <p style="font-size: 16px; line-height: 26px; color: rgba(255, 255, 255, 0.897);">Our mission is to improve upon an innovative science and engineering community for rocket and space
-                    science enthusiasts at Johns Hopkins, and to provide more opportunities in aerospace and related
-                    disciplines for students of all levels. The diversity of work that we do allows students from all
-                    over campus to participate and learn more about the exciting field of rocketry.
+    <!-- What is High Powered Rocketry -->
+    <div class="section-box" style="height:440px;">
+        <div class="content" id="right" style="width: 55%;">
+            <h1 style="font-size:34px; padding-bottom: 15px; margin-left: -5px;">What is high-powered rocketry?</h1>
+            <p style="font-size: 16px; line-height: 26px; color: rgba(255, 255, 255, 0.897);"> High powered rockets have
+                the capacity to travel miles up into the atmosphere, and must be
+                engineered and built to survive the harsh aerodynamic, inertial, and internal propulsive loads
+                required to launch rockets to these extreme altitudes. <br>
+                <br>
+                It requires complex, well-designed remote operated control systems, radio-based telemetry, reliable
+                and robust recovery systems, and a great team of rocket scientists and supersonic fluids analysts
+                to hit our desired flight trajectories. <br>
+                <br>
+                This is real-world aerospace engineering, designing some of the most advanced amateur
+                rocket-powered launch vehicles in the world. <br>
             </p>
         </div>
 
-        <div class="image-box" id="right" style="width: 55%;  margin-top: 35px;" >
-            <img style="vertical-align:middle" style="height: 390px; margin-top: -30px;" src="images/index/sasha_lv2_launch.png"
+        <div class="image-box" id="left" style="width: 43%;  margin-top: 35px;">
+            <img style="vertical-align:middle" style="height: 390px; margin-top: -30px;"
+                src="images/index/rocket_on_rail_cropped.png"
                 alt="Positioning level 1 certificate rocket on launch rail.">
         </div>
     </div>
 
-     
+    <!-- Our Mission -->
+    <div class="section-box" style="height:400px;">
+        <div class="content" id="left" style="width: 43%;">
+            <h1 style="font-size:34px; padding-bottom: 15px; margin-left: -3px;">Our Mission</h1>
+            <p style="font-size: 16px; line-height: 26px; color: rgba(255, 255, 255, 0.897);">Our mission is to improve
+                upon an innovative science and engineering community for rocket and space
+                science enthusiasts at Johns Hopkins, and to provide more opportunities in aerospace and related
+                disciplines for students of all levels. The diversity of work that we do allows students from all
+                over campus to participate and learn more about the exciting field of rocketry.
+            </p>
+        </div>
 
-        <div id="section-gap" style="height: 1000px;"></div>
+        <div class="image-box" id="right" style="width: 55%;  margin-top: 35px;">
+            <img style="vertical-align:middle" style="height: 390px; margin-top: -30px;"
+                src="images/index/sasha_lv2_launch.png" alt="Positioning level 1 certificate rocket on launch rail.">
+        </div>
+    </div>
+
+
+
+    <div id="section-gap" style="height: 1000px;"></div>
 
     <!-- Footer -->
     <section class="footer">
@@ -171,6 +175,28 @@
             }
         }
         window.addEventListener("scroll", reveal);
+    </script>
+
+    <!-- JS for sticky nav bar on top -->
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll
+        position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
     </script>
 
 </body>
