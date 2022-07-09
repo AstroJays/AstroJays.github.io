@@ -18,7 +18,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    border: 5px solid red;
+
 }
 
 .single-team:hover {
@@ -34,7 +34,7 @@
     position: relative;
     z-index: 3;
     overflow: hidden;
-    border: 5px solid yellow;
+    
 }
 
 .team-img img {
@@ -58,7 +58,7 @@
     transition: all 0.4s;
     background: #2c87d2;
     z-index: 5;
-    border: 5px solid blue;
+    
 }
 
 .single-team:hover .team-content {

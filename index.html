@@ -69,7 +69,7 @@
     <!-- What is High Powered Rocketry -->
     <div class="section-box" style="height:440px;">
         <div class="content" id="right" style="width: 55%;">
-            <h1 style="font-size:34px; padding-bottom: 15px; margin-left: -5px;">What is high-powered rocketry?</h1>
+            <h1 style="font-size:36px; padding-bottom: 15px; margin-left: -5px;">What is high-powered rocketry?</h1>
             <p style="font-size: 16px; line-height: 26px; color: rgba(255, 255, 255, 0.897);"> High powered rockets have
                 the capacity to travel miles up into the atmosphere, and must be
                 engineered and built to survive the harsh aerodynamic, inertial, and internal propulsive loads
@@ -92,9 +92,10 @@
     </div>
 
     <!-- Our Mission -->
+    <section class="container reveal">
     <div class="section-box" style="height:400px;">
         <div class="content" id="left" style="width: 43%;">
-            <h1 style="font-size:34px; padding-bottom: 15px; margin-left: -3px;">Our Mission</h1>
+            <h1 style="font-size:36px; padding-bottom: 15px; margin-left: -8px;">Our Mission</h1>
             <p style="font-size: 16px; line-height: 26px; color: rgba(255, 255, 255, 0.897);">Our mission is to improve
                 upon an innovative science and engineering community for rocket and space
                 science enthusiasts at Johns Hopkins, and to provide more opportunities in aerospace and related
@@ -108,32 +109,31 @@
                 src="images/index/sasha_lv2_launch.png" alt="Positioning level 1 certificate rocket on launch rail.">
         </div>
     </div>
+</section>
 
-    <!-- Our Mission -->
+    <!-- Home Options -->
+    <section class="container reveal">
     <div class="parallax-text-box" style="margin-top: 40px; height: 600px;">
-        <h1 style="margin-top: 30px;"> Explore More: </h1>
+        <h1 style="margin-top: 10px;"> Explore More: </h1>
         <div class="home-options-grid">
             <div class="home-options-container">
-                <h1> Check out the Subsystems</h1>
+                <a href="about_us/subsystems.html"><h1> Check out the Subsystems</h1></a>
             </div>
 
             <div class="home-options-container">
-                <h1> Meet the Rockets</h1>
+                <a href="projects/proj01.html"><h1 style="margin-top: 10%;"> Meet the Rockets</h1></a>
             </div>
 
             <div class="home-options-container">
-                <h1 style="margin-top: 10%;"> View Media</h1>
+                <a href="media.html"><h1 style="margin-top: 10%;"> View Media</h1> </a>
             </div>
 
         </div>
     </div>
-
+    </section>
 
     <div class="parallax" style="background-image: url(images/index/home_page_group_photo.png);">
     </div>
-
-
-    <div id="section-gap" style="height: 300px;"></div>
 
     <!-- Footer -->
     <section class="footer">
@@ -181,7 +181,6 @@
 
     <!-- JS for reveal -->
     <script>
-        /* The reveal function */
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             once = 'true';
