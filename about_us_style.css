@@ -32,7 +32,8 @@
     position: relative;
 }
 
-.bb { /*blue, bolded text */
+.bb {
+    /*blue, bolded text */
     color: #50aefa;
     font-weight: bold;
 }
@@ -49,7 +50,7 @@
 }
 
 .content ul {
-    list-style-type:none;
+    list-style-type: none;
     line-height: 120%;
 }
 
@@ -79,7 +80,7 @@
 .image-box img {
     width: 100%;
     max-height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .image-box video {
@@ -94,6 +95,7 @@
 
 #right {
     float: right;
+    align-items: right;
 }
 
 #big-gap {
@@ -116,7 +118,3 @@ a.external-link:hover {
     color: rgba(255, 8, 222, 0.82);
     transition: 0.6s;
 }
-
-
-
-

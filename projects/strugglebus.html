@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strugglebus</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../about_us_style.css">
+    <link rel="stylesheet" href="../project_style.css">
+
+    <!-- The font is generated from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2442adcce2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <section class="sub-header" style="height:55vh;">
+        <nav>
+            <a href="../index.html"><img src="../images/astrojays_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- Add some links here-->
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">ABOUT US &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../about_us/subsystems.html">Subsystems</a>
+                                <a href="../about_us/competitions.html">Competitions</a>
+                                <a href="../about_us/milestones.html">Milestones</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="../projects/strugglebus.html">Strugglebus</a>
+                                <a href="../projects/govorun.html">Govorun</a>
+                                <a href="../projects/laika_revenge.html">Laika's Revenge</a>
+                                <a href="../projects/laika_revenge.html">Enzo</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="../media.html">MEDIA</a></li>
+                    <li><a href="../team2.html">OUR TEAM</a></li>
+                    <li><a href="../contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+        <div class="text-box-sub">
+            <h1>Strugglebus </h1>
+        </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <div class="section-box" style="height:570px;">
+        <div class="content" id="left" style="margin-left: 4%;">
+            <h1> Overview </h1>
+            <p> The structure and original avionics of this solid-propellent rocket were built
+                in 2019, but the build was followed by a
+                year of failed separation tests that earned it the moniker “Strugglebus”. Then COVID hit just as we
+                nailed down separation tests, grounding the poor rocket for another year and a half. Finally, after a
+                redesign of the avionics and motor mounting, Strugglebus had a perfect first flight at the FAR 51025
+                competition in June 2022!
+            </p>
+
+            <ul style="border: solid 3px #50aefa; padding-left: 3%; padding-top: 2%; padding-bottom: 2%;">
+                <li> <span class="bb"> Motor: &nbsp;</span> Cesaroni L805</li>
+                <li> <span class="bb"> Airframe Length: &nbsp;</span> 87 inches</li>
+                <li> <span class="bb"> Launch History: &nbsp;</span> June 2022 @ FAR 51025, 8761 feet, live video
+                    streaming payload</li>
+            </ul>
+        </div>
+
+        <div class="image-box" id="right">
+            <video width="390" height="493" controls style="margin-left: 0%;">
+                <source src="../images/projects/strugglebus/Launch_Strugglebus.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="collage-box">
+        <img src="../images/projects/strugglebus/collage.png">
+    </div>
+
+
+    <div id="section-gap" style="margin-top: 200px;"></div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+
+        <p> Made with <i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 183, 255);"></i> by Joy Yeh & Sasha
+            Khidekel </p>
+    </section>
+
+
+    <!-- JS for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+
+    <!-- JS for smooth page transition -->
+    <script>
+        var speed = 'normal';
+        $('html, body').hide();
+        $(document).ready(function () {
+            $('html, body').fadeIn(speed, function () {
+                $('a[href], button[href]').click(function (event) {
+                    var url = $(this).attr('href');
+                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
+                    event.preventDefault();
+                    $('html, body').fadeOut(speed, function () {
+                        window.location = url;
+                    });
+                });
+            });
+        });
+    </script>
+
+    <!-- JS for reveal -->
+    <script>
+        /* The reveal function */
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            once = 'true';
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+    </script>
+
+    <!-- JS for smooth page transition -->
+
+</body>
+
+</html>
