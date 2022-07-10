@@ -132,7 +132,7 @@
     
     /* make a tag for right float too */
     display: grid;
-    grid-template-rows: 270px 270px;
+    grid-template-rows: 260px 250px;
     grid-row-gap: 10px;
 }
 
@@ -148,4 +148,36 @@
 
 .imgrid-04 .item-2 {
     grid-row: 2 / 3;
+}
+
+
+/* FAR 51025 */
+.imgrid-05 {
+    width: 100%;
+    float: left;
+    
+    /* make a tag for right float too */
+    display: grid;
+    grid-template-rows: 140px 420px;
+    grid-row-gap: 10px;
+}
+
+.imgrid-05 img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgrid-05 .item-1 {
+    grid-row: 1 / 2;
+}
+
+.imgrid-05 .item-2 {
+    grid-row: 2 / 3;
+}
+
+.imgrid-05 .item-2 video {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
 }
