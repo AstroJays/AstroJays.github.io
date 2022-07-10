@@ -123,3 +123,29 @@
     grid-row: 3 / 4;
     grid-column: 3 / 4;
 }
+
+
+/* Tripoli */
+.imgrid-04 {
+    width: 100%;
+    float: left;
+    
+    /* make a tag for right float too */
+    display: grid;
+    grid-template-rows: 270px 270px;
+    grid-row-gap: 10px;
+}
+
+.imgrid-04 img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgrid-04 .item-1 {
+    grid-row: 1 / 2;
+}
+
+.imgrid-04 .item-2 {
+    grid-row: 2 / 3;
+}
