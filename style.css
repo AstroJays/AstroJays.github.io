@@ -405,6 +405,12 @@ nav .fa {
     margin: auto;
 }
 
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .contact-col {
     flex-basis: 48%;
     margin-bottom: 30px;
@@ -442,22 +448,4 @@ nav .fa {
     outline: none;
     border: 1px solid #5091c6;
     box-sizing: border-box;
-}
-
-/* Swup transitions */
-.transition-fade {
-    opacity: 1;
-    transition: 500ms;
-    transform: translateX(0);
-    transform-origin: left;
-}
-
-html.is-animating .transition-fade {
-    opacity: 1;
-    transform: translateX(100%);
-}
-
-html.is-leaving .transition-fade {
-    opacity: 0;
-    transform: translateX(0);
 }
