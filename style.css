@@ -12,7 +12,7 @@ html body {
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background.jpg);
+    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background_02.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -22,9 +22,9 @@ html body {
 }
 
 .sub-header {
-    height: 75vh;
+    height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background.jpg);
+    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background_02.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -50,7 +50,7 @@ html body {
 
 nav {
     height: 50px;
-    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(21, 76, 139, 0.671)), url(images/index/home_background.jpg);
+    background-image: linear-gradient(rgba(4, 11, 36, 0.92), rgba(6, 23, 49, 0.943));
     display: flex;
     padding: 2% 4%;
     margin-top: -30px;
@@ -100,6 +100,16 @@ nav img {
 
 .nav-links ul li:hover::after {
     width: 100%;
+}
+
+#preloader {
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
 }
 
 /* Dropdown menus in nav bar */
