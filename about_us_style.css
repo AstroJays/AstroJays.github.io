@@ -1,29 +1,44 @@
 /* Style page for about us */
-
-
+table {
+    border-collapse: separate;
+    border-spacing: 10%;
+}
 /* Section container */
 .section-box {
-    height: 530px;
+    display: table;
     width: 90%;
     margin: auto;
     text-align: left;
     z-index: 1;
     margin-top: 60px;
     border-top: 3px solid #50aefa;
+    border: 5px solid red;
 
 }
 
 .section-box img {
     width: 100%;
+    border: 5px solid orange;
+    display: table-cell;
 }
 
-.section-box h1 {
+.content {
+    width: 54%;
+    min-height: 300px;
+    word-wrap: break-word;
+    position: relative;
+    margin-top: 35px;
+    border: 5px solid blue;
+    display: table-cell;
+}
+
+.content h1 {
     font-size: 60px;
     color: rgba(255, 255, 255, 0.896);
-    margin-top: -35px;
+    margin-top: -16px;
 }
 
-.section-box h2 {
+.content h2 {
     font-size: 20px;
     color: #50aefa;
     margin-top: -12px;
@@ -32,19 +47,11 @@
     position: relative;
 }
 
-.bb {
-    /*blue, bolded text */
-    color: #50aefa;
-    font-weight: bold;
-}
-
-.section-box p {
+.content p {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.82);
-    line-height: 32px;
-    margin-left: 0px;
+    line-height: 28px;
     margin-top: -12px;
-    padding-bottom: 20px;
     display: inline-block;
     position: relative;
 }
@@ -52,14 +59,6 @@
 .content ul {
     list-style-type: none;
     line-height: 120%;
-}
-
-.content {
-    width: 54%;
-    min-height: 300px;
-    word-wrap: break-word;
-    position: relative;
-    margin-top: 50px;
 }
 
 .content li {
@@ -81,6 +80,7 @@
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+    margin-bottom: 35px;
 }
 
 .image-box video {
@@ -95,11 +95,16 @@
 
 #right {
     float: right;
-    align-items: right;
 }
 
 #big-gap {
     margin-top: 100px;
+}
+
+.bb {
+    /*blue, bolded text */
+    color: #50aefa;
+    font-weight: bold;
 }
 
 /* For all the external links to competition websites */
