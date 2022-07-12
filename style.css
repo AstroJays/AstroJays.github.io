@@ -271,7 +271,120 @@ nav .fa {
     opacity: 1;
 }
 
-/* For milestone timeline. Everything aligns in the center. */
+/* Main text containers (This is really important) */
+/* Section container */
+.section-box {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    z-index: 1;
+    margin-top: 60px;
+    border-top: 3px solid #50aefa;
+
+    justify-content: space-between;
+
+}
+
+.section-box img {
+    width: 100%;
+}
+
+.content {
+    width: 54%;
+    word-wrap: break-word;
+    position: relative;
+    margin-top: 35px;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.896);
+    margin-top: -16px;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #50aefa;
+    margin-top: -12px;
+    margin-bottom: 4px;
+    display: inline-block;
+    position: relative;
+}
+
+.content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 28px;
+    display: inline-block;
+    position: relative;
+}
+
+.content ul {
+    list-style-type: none;
+    line-height: 120%;
+}
+
+.content li {
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 32px;
+    font-size: 18px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+/* wiki image column */
+.image-box {
+    width: 42%;
+    margin-top: 35px;
+    z-index: 1;
+}
+
+.image-box img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.image-box video {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Phone screen fitting */
+@media screen and (max-width: 700px) {
+    .section-box {
+        width: 90%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .content, .image-box {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        position: relative;
+        float: none;
+    }
+
+    #left, #right {
+        float: none;
+    }
+
+    .content h1 {
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+
+    .content p {
+        font-size: 16px;
+
+    }
+}
+
+
+/* For milestone timeline */
 .parallax {
     /* The image used */
     background-image: url(images/about_us/competitions/tripoli_sasha_rocket.JPG);
@@ -286,10 +399,11 @@ nav .fa {
 }
 
 .parallax-text-box {
+    margin-top: 60px;
     min-height: 300px;
     background-color: rgb(6, 38, 59);
-    font-size: 36px;
     display: grid;
+    padding-bottom: 60px;
 }
 
 .parallax-text-box h1 {
@@ -317,35 +431,36 @@ nav .fa {
     text-align: center;
 }
 
+
 /* Some buttons on the home screen */
 .home-options-grid {
-    margin-top: -30px;
-    height: 220px;
+    border: 5px solid red;
     border-bottom: 3px solid #50aefa;
     width: 90%;
+
+    margin-top: -3%;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .home-options-container {
     /* the container element */
     position: relative;
-    height: 180px;
     cursor: pointer;
     border: solid 5px #50aefa;
     background-color: rgba(0, 102, 255, 0.2);
+    flex-basis: 31%;
 }
 
 .home-options-container h1 {
-    margin-top: 3%;
-    margin-bottom: auto;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 36px;
 }
+
 
 .home-options-container:hover {
     box-shadow: 0 0 14px 0px rgba(0, 102, 255, 0.9);
@@ -359,6 +474,36 @@ nav .fa {
 
 .home-options-container a {
     text-decoration: none;
+}
+
+/* Parallax phone fitting */
+@media screen and (max-width: 700px) {
+
+    .parallax-text-box {
+        margin-top: 30px;
+    }
+
+    .parallax-text-box h1 {
+        font-size: 24px;
+    }
+
+    .home-options-grid {
+        margin-top: 3%;
+        flex-direction: column;
+    }
+
+    .home-options-container {
+        height: 100px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    .home-options-container h1 {
+        font-size: 24px;
+    }
+
 }
 
 /* Footer */
