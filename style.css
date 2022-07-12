@@ -52,11 +52,12 @@ nav {
     height: 50px;
     background-image: linear-gradient(rgba(4, 11, 36, 0.92), rgba(6, 23, 49, 0.943));
     display: flex;
-    padding: 2% 4%;
+    padding: 2% 6%;
     margin-top: -30px;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+
 }
 
 /* We change the size of logo in the syle sheet so that it works with all images. */
@@ -149,6 +150,7 @@ nav img {
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
+    z-index:1;
     position: fixed;
     top: 80;
     width: calc(100% - 101px) !important;
@@ -288,6 +290,7 @@ nav .fa {
 
 .section-box img {
     width: 100%;
+    z-index: 100000;
 }
 
 .content {
@@ -337,13 +340,13 @@ nav .fa {
 .image-box {
     width: 42%;
     margin-top: 35px;
-    z-index: 1;
+    
 }
 
 .image-box img {
     width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    z-index: 5;
 }
 
 .image-box video {
@@ -400,7 +403,6 @@ nav .fa {
 
 .parallax-text-box {
     margin-top: 60px;
-    min-height: 300px;
     background-color: rgb(6, 38, 59);
     display: grid;
     padding-bottom: 60px;
@@ -434,11 +436,9 @@ nav .fa {
 
 /* Some buttons on the home screen */
 .home-options-grid {
-    border: 5px solid red;
     border-bottom: 3px solid #50aefa;
     width: 90%;
-
-    margin-top: -3%;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 30px;
@@ -458,6 +458,7 @@ nav .fa {
 .home-options-container h1 {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     font-size: 36px;
 }
 
@@ -480,7 +481,7 @@ nav .fa {
 @media screen and (max-width: 700px) {
 
     .parallax-text-box {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .parallax-text-box h1 {
@@ -490,6 +491,7 @@ nav .fa {
     .home-options-grid {
         margin-top: 3%;
         flex-direction: column;
+        padding-bottom: 15px;
     }
 
     .home-options-container {
