@@ -1,84 +1,11 @@
-/* Additional styles for the projects pages */
-.project-title {
-    height: 380px;
-    width: 90%;
-    margin: auto;
-    text-align: left;
-    z-index: 1;
-    margin-top: 60px;
-    border: 3px solid #50aefa;
-    position: relative;
-}
-
-.project-title h1 {
-    margin-left: 3%;
-    font-size: 64px;
-    color: rgba(255, 255, 255, 0.896);
-    margin-top: 10px;
-}
-
-.project-info {
-    min-height: 250px;
-    width: 35%;
-    margin-left: 2.8%;
-    padding-bottom: 3%;
-    display: inline-block;
-    position: relative;
-    /*border: 5px solid red; */
-}
-
-.project-info h2 {
-    margin-left: 2.1%;
-    line-height: 50px;
-    display: inline-block;
-    color: #50aefa;
-    font-size: 24px;
-    text-align: left;
-}
-
-.project-info p {
-    color: #fff;
-    font-size: 20px;
-    display: inline-block;
-}
-
-.project-info li {
-    line-height: 32px;
-    color: #fff;
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-#left {
-    float: left;
-    margin-right: 3%;
-}
-
-#right {
-    float: left;
-    margin-right: -10%;
-}
-
 
 /* Wide image box for the whole rocket */
-.proj-image-box {
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 42%;
-    margin-top: 50px;
-    z-index:1;
-}
-
-.proj-image-box img {
-    width: 100%;
-}
 
 .collage-box {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
 }
 
 .collage-box img {

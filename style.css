@@ -22,7 +22,7 @@ html body {
 }
 
 .sub-header {
-    height: 70vh;
+    height: 55vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background_02.jpg);
     background-position: center;
@@ -150,7 +150,7 @@ nav img {
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-    z-index:1;
+    z-index: 1;
     position: fixed;
     top: 80;
     width: calc(100% - 101px) !important;
@@ -221,10 +221,27 @@ nav .fa {
         font-size: 16px;
     }
 
+    .text-box-sub h1 {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    .sub-header {
+        height:35vh;
+    }
+
     .hero-btn {
         font-size: 16px;
         font-weight: 200px;
         border: 1px solid #fff;
+    }
+
+    .nav {
+        margin-right: -180px;
+    }
+
+    .sticky {
+        width: calc(100% - 58px) !important;
     }
 
     .nav-links ul li {
@@ -244,6 +261,10 @@ nav .fa {
         transition: 0.4s;
     }
 
+    .nav img {
+        width: 60px;
+    }
+
     /* The cross icon for the screen menu */
     nav .fa {
         display: block;
@@ -258,6 +279,15 @@ nav .fa {
         padding: 20px;
         margin-top: 50px;
     }
+
+    #bar {
+        padding-top: 35px;
+    }
+
+    #logo {
+        width: 50px;
+    }
+ 
 }
 
 /* Scrollable web element */
@@ -283,9 +313,12 @@ nav .fa {
     z-index: 1;
     margin-top: 60px;
     border-top: 3px solid #50aefa;
-
+    
     justify-content: space-between;
+}
 
+#proj {
+    width: 80%;
 }
 
 .section-box img {
@@ -298,6 +331,7 @@ nav .fa {
     word-wrap: break-word;
     position: relative;
     margin-top: 35px;
+    
 }
 
 .content h1 {
@@ -336,11 +370,19 @@ nav .fa {
     position: relative;
 }
 
+#proj-info-list {
+    border: solid 3px #50aefa; 
+    margin-top: 30px;
+    padding-left: 3%; 
+    padding-top: 2%; 
+    padding-bottom: 2%;
+}
+
 /* wiki image column */
 .image-box {
     width: 42%;
     margin-top: 35px;
-    
+
 }
 
 .image-box img {
@@ -353,6 +395,7 @@ nav .fa {
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
+    float: right;
 }
 
 /* Phone screen fitting */
@@ -377,7 +420,7 @@ nav .fa {
 
     .content h1 {
         font-size: 24px;
-        padding-bottom: 16px;
+        padding-bottom: 0px;
     }
 
     .content p {
@@ -479,7 +522,6 @@ nav .fa {
 
 /* Parallax phone fitting */
 @media screen and (max-width: 700px) {
-
     .parallax-text-box {
         margin-top: 40px;
     }

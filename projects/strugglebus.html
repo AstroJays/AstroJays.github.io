@@ -20,9 +20,9 @@
 
 <body>
     <!-- Nav bar -->
-    <section class="sub-header" style="height:55vh;">
+    <section class="sub-header">
         <nav>
-            <a href="../index.html"><img src="../images/astrojays_logo.png"></a>
+            <a href="../index.html"><img src="../images/astrojays_logo.png" id="logo"></a>
             <div class="nav-links" id="navLinks">
                 <!-- Add some links here-->
                 <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
@@ -56,19 +56,18 @@
                     <li><a href="../contact.html">CONTACT US</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
         </nav>
-
 
         <div class="text-box-sub">
             <h1>Strugglebus </h1>
         </div>
-        </div>
+
     </section>
 
     <!-- Intro -->
-    <div class="section-box" style="height:570px;">
-        <div class="content" id="left" style="margin-left: 4%;">
+    <div class="section-box" id="proj">
+        <div class="content">
             <h1> Overview </h1>
             <p> The structure and original avionics of this solid-propellent rocket were built
                 in 2019, but the build was followed by a
@@ -78,7 +77,7 @@
                 competition in June 2022!
             </p>
 
-            <ul style="border: solid 3px #50aefa; padding-left: 3%; padding-top: 2%; padding-bottom: 2%;">
+            <ul id="proj-info-list" >
                 <li> <span class="bb"> Motor: &nbsp;</span> Cesaroni L805</li>
                 <li> <span class="bb"> Airframe Length: &nbsp;</span> 87 inches</li>
                 <li> <span class="bb"> Launch History: &nbsp;</span> June 2022 @ FAR 51025, 8761 feet, live video
@@ -86,7 +85,7 @@
             </ul>
         </div>
 
-        <div class="image-box" id="right">
+        <div class="image-box">
             <video width="390" height="493" controls style="margin-left: 0%;">
                 <source src="../images/projects/strugglebus/Launch_Strugglebus.mp4" type="video/mp4">
             </video>
@@ -165,7 +164,20 @@
         window.addEventListener("scroll", reveal);
     </script>
 
-    <!-- JS for smooth page transition -->
+    <!-- JS for sticky nav bar -->
+    <script>
+        window.onscroll = function () { myFunction() };
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 
