@@ -429,10 +429,17 @@ nav .fa {
     }
 
     .content h1 {
-        font-size: 24px;
+        font-size: 26px;
         margin-top: -26px;
         padding-bottom: 0px;
     }
+
+    .content h2 {
+        font-size: 16px;
+        margin-top: -20px;
+        padding-bottom: 0px;
+    }
+
 
     .content p {
         font-size: 16px;
