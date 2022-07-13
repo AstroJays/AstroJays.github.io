@@ -100,13 +100,27 @@
         <img src="../images/projects/govorun/gov_collage.png">
     </div>
 
+    <!-- Prev and next buttons -->
+    <div class="sub-options-grid">
 
-    <div id="section-gap" style="margin-top: 200px;"></div>
-    </section>
+        <div class="sub-options-container">
+            <a href="strugglebus.html">
+                <h3> Previous: Strugglebus</h3>
+            </a>
+        </div>
+
+        <div class="sub-options-container">
+            <a href="laika_revenge.html">
+                <h3> Next: Laika's Revenge</h3>
+            </a>
+        </div>
+
+    </div>
+
+    <div id="big-gap" style="margin-top: 30px;"></div>></div>
 
     <!-- Footer -->
     <section class="footer">
-
         <div class="icons">
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -114,43 +128,23 @@
             <i class="fa fa-linkedin" aria-hidden="true"></i>
         </div>
 
-        <p> Made with <i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 183, 255);"></i> by Joy Yeh & Sasha
-            Khidekel </p>
+        <p> Made with <i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 183, 255);"></i> by Joy Yeh &
+            Sasha Khidekel </p>
     </section>
-
 
     <!-- JS for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu() {
-            navLinks.style.left = "0";
+            navLinks.style.right = "0";
         }
         function hideMenu() {
-            navLinks.style.left = "-200px";
+            navLinks.style.right = "-200px";
         }
-    </script>
-
-    <!-- JS for smooth page transition -->
-    <script>
-        var speed = 'normal';
-        $('html, body').hide();
-        $(document).ready(function () {
-            $('html, body').fadeIn(speed, function () {
-                $('a[href], button[href]').click(function (event) {
-                    var url = $(this).attr('href');
-                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-                    event.preventDefault();
-                    $('html, body').fadeOut(speed, function () {
-                        window.location = url;
-                    });
-                });
-            });
-        });
     </script>
 
     <!-- JS for reveal -->
     <script>
-        /* The reveal function */
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             once = 'true';
@@ -167,9 +161,6 @@
         }
         window.addEventListener("scroll", reveal);
     </script>
-
-    <!-- JS for smooth page transition -->
-
 </body>
 
 </html>
