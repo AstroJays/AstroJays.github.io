@@ -227,7 +227,7 @@ nav .fa {
     }
 
     .sub-header {
-        height:35vh;
+        height: 35vh;
     }
 
     .hero-btn {
@@ -250,7 +250,6 @@ nav .fa {
 
     .nav-links {
         position: fixed;
-        /* Change this for better google map display on small screen! */
         background: #5091c6;
         height: 100vh;
         width: 200px;
@@ -281,13 +280,17 @@ nav .fa {
     }
 
     #bar {
-        padding-top: 35px;
+        padding-top: 28px;
+    }
+
+    #times {
+        padding-left: 20px;
     }
 
     #logo {
         width: 50px;
     }
- 
+
 }
 
 /* Scrollable web element */
@@ -303,8 +306,7 @@ nav .fa {
     opacity: 1;
 }
 
-/* Main text containers (This is really important) */
-/* Section container */
+/* Main section container */
 .section-box {
     display: flex;
     width: 90%;
@@ -313,7 +315,6 @@ nav .fa {
     z-index: 1;
     margin-top: 60px;
     border-top: 3px solid #50aefa;
-    
     justify-content: space-between;
 }
 
@@ -323,7 +324,6 @@ nav .fa {
 
 .section-box img {
     width: 100%;
-    z-index: 100000;
 }
 
 .content {
@@ -331,7 +331,6 @@ nav .fa {
     word-wrap: break-word;
     position: relative;
     margin-top: 35px;
-    
 }
 
 .content h1 {
@@ -371,10 +370,10 @@ nav .fa {
 }
 
 #proj-info-list {
-    border: solid 3px #50aefa; 
+    border: solid 3px #50aefa;
     margin-top: 30px;
-    padding-left: 3%; 
-    padding-top: 2%; 
+    padding-left: 3%;
+    padding-top: 2%;
     padding-bottom: 2%;
 }
 
@@ -382,7 +381,6 @@ nav .fa {
 .image-box {
     width: 42%;
     margin-top: 35px;
-
 }
 
 .image-box img {
@@ -404,6 +402,7 @@ nav .fa {
         width: 90%;
         flex-direction: column;
         margin-top: 50px;
+        border: 5px solid red;
     }
 
     .content, .image-box {
@@ -420,12 +419,18 @@ nav .fa {
 
     .content h1 {
         font-size: 24px;
+        margin-top: -26px;
         padding-bottom: 0px;
     }
 
     .content p {
         font-size: 16px;
+        border: 5px solid red;
+    }
 
+    .image-box {
+        margin-top: 35px;
+        border: 5px solid red;
     }
 }
 
@@ -433,10 +438,9 @@ nav .fa {
 .parallax {
     /* The image used */
     background-image: url(images/about_us/competitions/tripoli_sasha_rocket.JPG);
-    /* Set a specific height */
     min-height: 700px;
 
-    /* Create the parallax scrolling effect */
+    /* Scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -475,7 +479,6 @@ nav .fa {
     text-align: center;
 }
 
-
 /* Some buttons on the home screen */
 .home-options-grid {
     border-bottom: 3px solid #50aefa;
@@ -504,7 +507,6 @@ nav .fa {
     font-size: 36px;
 }
 
-
 .home-options-container:hover {
     box-shadow: 0 0 14px 0px rgba(0, 102, 255, 0.9);
     transition: 0.2s;
@@ -518,6 +520,54 @@ nav .fa {
 .home-options-container a {
     text-decoration: none;
 }
+
+/* Prev and next buttons */
+
+.sub-options-grid {
+    width: 90%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-options-container {
+    /* the container element */
+    position: relative;
+    cursor: pointer;
+    border: solid 2px #50aefa;
+    background-color: rgba(0, 102, 255, 0.2);
+    flex-basis: 48%;
+}
+
+.sub-options-container a {
+    color: #50aefa;
+    text-decoration: none;
+}
+
+.sub-options-container h3 {
+    margin: auto;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.sub-options-container:hover {
+    box-shadow: 0 0 8px 0px rgba(0, 102, 255, 0.9);
+    transition: 0.2s;
+}
+
+.sub-options-container h3:hover {
+    color: #addaff;
+    transition: 0.2s;
+}
+
+
+
+
 
 /* Parallax phone fitting */
 @media screen and (max-width: 700px) {
@@ -546,7 +596,6 @@ nav .fa {
     .home-options-container h1 {
         font-size: 24px;
     }
-
 }
 
 /* Footer */
@@ -579,8 +628,6 @@ nav .fa {
 }
 
 /* Contact Us Page */
-
-
 .location {
     width: 80%;
     margin: auto;
