@@ -76,7 +76,7 @@ nav img {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 16px;
+    padding: 8px 12px;
     margin-top: 32px;
     position: relative;
 }
@@ -153,7 +153,7 @@ nav img {
     z-index: 1;
     position: fixed;
     top: 80;
-    width: calc(100% - 101px) !important;
+    width: calc(100% - 12%) !important;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
