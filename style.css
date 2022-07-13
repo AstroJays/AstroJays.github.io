@@ -212,7 +212,7 @@ nav .fa {
 }
 
 /* Window accomodation for small device */
-@media(max-width: 700px) {
+@media(max-width: 1024px) {
     .text-box h1 {
         font-size: 24px;
     }
@@ -416,7 +416,7 @@ nav .fa {
 }
 
 /* Phone screen fitting */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
     .section-box {
         width: 90%;
         flex-direction: column;
@@ -588,7 +588,7 @@ nav .fa {
 }
 
 /* Parallax phone fitting */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
     .parallax-text-box {
         margin-top: 40px;
     }
@@ -711,7 +711,7 @@ nav .fa {
     box-sizing: border-box;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 1024px) {
     .contact-us {
         flex-direction: column;
     }

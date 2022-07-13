@@ -113,7 +113,7 @@
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
     .member-gallery {
         grid-template-columns: repeat(2, 1fr);
         flex-direction: column;
