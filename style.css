@@ -248,7 +248,7 @@ nav .fa {
     }
 
     .sticky {
-        width: calc(100% - 58px) !important;
+        width: calc(100% - 12%) !important;
     }
 
     .nav-links ul li {
