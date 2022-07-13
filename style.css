@@ -396,6 +396,11 @@ nav .fa {
     z-index: 5;
 }
 
+#alive-image:hover {
+    box-shadow: 0 0 14px 0px rgba(0, 102, 255, 0.9);
+    transition: 0.2s;
+}
+
 .image-box video, iframe {
     object-fit: cover;
     max-width: 100%;

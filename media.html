@@ -3,70 +3,67 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
+
+    <title> Media </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about_us_style.css">
-    <link rel="stylesheet" href="project_style.css">
 
-    <!-- The font is generated from Google Fonts-->
+    <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/2442adcce2.js" crossorigin="anonymous"></script>
-
+    <link rel="icon" href="images/astrojays_logo.png">
 </head>
 
 <body>
-
     <!-- Nav bar -->
     <section class="sub-header">
-    
-            <nav>
-                <!-- able to click on the logo and go to main page-->
-                <a href="index.html"><img src="images/astrojays_logo.png"></a>
-                <div class="nav-links" id="navLinks">
-                    <!-- Add some links here-->
-                    <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn">ABOUT US &#11167 </button>
-                                <div class="dropdown-content">
-                                    <a href="about_us/subsystems.html">Subsystems</a>
-                                    <a href="about_us/competitions.html">Competitions</a>
-                                    <a href="about_us/milestones.html">Milestones</a>
-                                </div>
+        <nav>
+            <a href="../index.html"><img src="images/astrojays_logo.png" id="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- Add some links here-->
+                <i class="fa fa-times" id="times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">ABOUT US &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="about_us/subsystems.html">Subsystems</a>
+                                <a href="about_us/competitions.html">Competitions</a>
+                                <a href="about_us/milestones.html">Milestones</a>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn">Projects &#11167 </button>
-                                <div class="dropdown-content">
-                                    <a href="projects/strugglebus.html">Strugglebus</a>
-                                    <a href="projects/govorun.html">Govorun</a>
-                                    <a href="projects/laika_revenge.html">Laika's Revenge</a>
-                                    <a href="projects/enzo.html">Enzo</a>
-                                </div>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects &#11167 </button>
+                            <div class="dropdown-content">
+                                <a href="projects/strugglebus.html">Strugglebus</a>
+                                <a href="projects/govorun.html">Govorun</a>
+                                <a href="projects/laika_revenge.html">Laika's Revenge</a>
+                                <a href="projects/laika_revenge.html">Enzo</a>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li><a href="media.html">MEDIA</a></li>
-                        <li><a href="team2.html">OUR TEAM</a></li>
-                        <li><a href="contact.html">CONTACT US</a></li>
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
-
-            <div class="text-box-sub">
-                <h1>Media </h1>
-                <h2>Photos and videos of our team. </h2>
+                    <li><a href="media.html">MEDIA</a></li>
+                    <li><a href="team2.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
             </div>
-       
+            <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box-sub">
+            <h1>Media </h1>
+            <h2>Photos and videos of our team. </h2>
+        </div>
+
     </section>
 
     <section class="container reveal">
@@ -74,16 +71,28 @@
         <div class="section-box">
             <div class="content" id="left">
                 <h1> Page in Progress!</h1>
-                <p> Webmasters at work, check back soon :) </p>
+                <h2> Webmasters at work, check back soon :) </h2>
+                <p> By the way, <b>the Hub newsleter at JHU</b> just wrote an article about us! Check it out by clicking
+                    on the image or <a class="external-link"
+                        href="https://hub.jhu.edu/2022/07/13/undergrad-rocketry-team-second-place-competition/"
+                        target="_blank" rel="noopener noreferrer"> HERE
+                    </a>.
+                </p>
+
             </div>
 
-            <div class="image-box" id="right">
-                <img src="images/about_us/competitions/FAR2022_0_Team.jpg">
+            <div class="image-box" id="right"><a class="external-link"
+                    href="https://hub.jhu.edu/2022/07/13/undergrad-rocketry-team-second-place-competition/"
+                    target="_blank" rel="noopener noreferrer"> <img src="images/media/the_HUB.PNG" id="alive-image">
+                </a>.
+
             </div>
         </div>
     </section>
 
 
+
+    <div id="big-gap" style="margin-top: 30px;"></div>
     <!-- Footer -->
     <section class="footer">
 
