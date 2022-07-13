@@ -226,6 +226,13 @@ nav .fa {
         margin-top: 40px;
     }
 
+    .text-box-sub h2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        font-size: 16px;
+    }
+
     .sub-header {
         height: 35vh;
     }
@@ -402,7 +409,6 @@ nav .fa {
         width: 90%;
         flex-direction: column;
         margin-top: 50px;
-        border: 5px solid red;
     }
 
     .content, .image-box {
@@ -425,12 +431,10 @@ nav .fa {
 
     .content p {
         font-size: 16px;
-        border: 5px solid red;
     }
 
     .image-box {
         margin-top: 35px;
-        border: 5px solid red;
     }
 }
 
@@ -565,10 +569,6 @@ nav .fa {
     transition: 0.2s;
 }
 
-
-
-
-
 /* Parallax phone fitting */
 @media screen and (max-width: 700px) {
     .parallax-text-box {
@@ -595,6 +595,14 @@ nav .fa {
 
     .home-options-container h1 {
         font-size: 24px;
+    }
+
+    .sub-options-grid {
+        margin-top: 30px;
+    }
+
+    .sub-options-container h3 {
+        font-size: 16px;
     }
 }
 

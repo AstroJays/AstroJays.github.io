@@ -1,31 +1,33 @@
+<!-- The AstroJays Website "about us -> competitions" page. -->
+<!-- Updated by Joy Yeh on 07/12/2022 -->
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competitions </title>
+
+    <title> Competitions </title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../about_us_style.css">
-    <link rel="stylesheet" href="../img_grids_style.css">
 
-    <!-- Font -->
+    <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/2442adcce2.js" crossorigin="anonymous"></script>
-
+    <link rel="icon" href="images/astrojays_logo.png">
 </head>
 
 <body>
     <!-- Nav bar -->
     <section class="sub-header" style="height:70vh;">
         <nav>
-            <a href="../index.html"><img src="../images/astrojays_logo.png"></a>
+            <a href="../index.html"><img src="../images/astrojays_logo.png" id="logo"></a>
             <div class="nav-links" id="navLinks">
                 <!-- Add some links here-->
-                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
+                <i class="fa fa-times" id="times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="../index.html">HOME</a></li>
                     <li>
@@ -56,12 +58,11 @@
                     <li><a href="../contact.html">CONTACT US</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
         </nav>
 
-
-        <div class="text-box-sub" id="top">
-            <h1>Competitions</h1>
+        <div class="text-box-sub">
+            <h1> Competitions </h1>
             <h2> The page features the various competitions and programs we participate in. </h2>
         </div>
         </div>
@@ -71,7 +72,6 @@
     <div class="section-box">
         <div class="content">
             <h1> FAR 51025</h1>
-
             <p> FAR 51025 is an annual intercollegiate competition hosted by the
                 <b>Friends of Amateur Rocketry</b><a class="external-link" href="https://friendsofamateurrocketry.org/"
                     target="_blank" rel="noopener noreferrer"> (FAR)
@@ -100,7 +100,14 @@
     </div>
 
     <!-- Tripoli Certifications-->
-    <div class="section-box" >
+    <div class="section-box">
+        <div class="image-box">
+            <div class="imgrid-04">
+                <div class="item-1"> <img src="../images/about_us/competitions/CertFlights2021.JPG"> </div>
+                <div class="item-2"> <img src="../images/about_us/competitions/CertFlights2017.JPG"> </div>
+            </div>
+        </div>
+
         <div class="content">
             <h1> Tripoli Certifications </h1>
             <p> To be able to buy high-power commercial rocket motors, aspiring amateur rocket scientists have to
@@ -122,15 +129,6 @@
                 <li> <span class="bb"> Lv. 1 Motor: &nbsp;</span> Aerotech 38mm HP SU EMS Motor</li>
                 <li> <span class="bb"> Total Impulse: &nbsp;</span> ~200-300 N-s </li>
             </ul>
-        </div>
-
-        <div class="image-box">
-            <div class="imgrid-04">
-                <div class="item-1"> <img
-                        src="../images/about_us/competitions/CertFlights2021.JPG"> </div>
-                <div class="item-2"> <img
-                        src="../images/about_us/competitions/CertFlights2017.JPG"> </div>
-            </div>
         </div>
     </div>
 
@@ -167,11 +165,25 @@
         </div>
     </div>
 
-    <div id="big-gap"></div>
+    <!-- Prev and next buttons -->
+    <div class="sub-options-grid">
+        <div class="sub-options-container">
+            <a href="subsystems.html">
+                <h3> Previous: Subsystems</h3>
+            </a>
+        </div>
+
+        <div class="sub-options-container">
+            <a href="milestones.html">
+                <h3> Next: Milestones</h3>
+            </a>
+        </div>
+    </div>
+
+    <div id="big-gap" style="margin-top: 30px;"></div>></div>
 
     <!-- Footer -->
     <section class="footer">
-
         <div class="icons">
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -180,42 +192,22 @@
         </div>
 
         <p> Made with <i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 183, 255);"></i> by Joy Yeh &
-            Sasha
-            Khidekel </p>
+            Sasha Khidekel </p>
     </section>
 
     <!-- JS for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu() {
-            navLinks.style.left = "0";
+            navLinks.style.right = "0";
         }
         function hideMenu() {
-            navLinks.style.left = "-200px";
+            navLinks.style.right = "-200px";
         }
-    </script>
-
-    <!-- JS for smooth page transition -->
-    <script>
-        var speed = 'normal';
-        $('html, body').hide();
-        $(document).ready(function () {
-            $('html, body').fadeIn(speed, function () {
-                $('a[href], button[href]').click(function (event) {
-                    var url = $(this).attr('href');
-                    if (url.indexOf('#') == 0 || url.indexOf('javascript:') == 0) return;
-                    event.preventDefault();
-                    $('html, body').fadeOut(speed, function () {
-                        window.location = url;
-                    });
-                });
-            });
-        });
     </script>
 
     <!-- JS for reveal -->
     <script>
-        /* The reveal function */
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             once = 'true';
@@ -232,7 +224,6 @@
         }
         window.addEventListener("scroll", reveal);
     </script>
-
 </body>
 
 </html>
