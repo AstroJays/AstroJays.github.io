@@ -2,18 +2,18 @@
 
 /* Project Grid */
 .member-gallery {
-    margin-top: 30px;
-    margin-bottom: 100px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    grid-gap: 3vw;
 }
 
 .single-team {
-    margin-top: 50px;
+    margin-top: 2vw;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -32,13 +32,13 @@
     position: relative;
     z-index: 3;
     overflow: hidden;
-
 }
 
 .team-img img {
-    width: 100%;
-    height: 330px;
+    width: 20vw;
+    height: 25vw;
     object-fit: cover;
+    transform: translateY(-0.6vw);
     transition: 0.3s;
 }
 
@@ -46,72 +46,55 @@
     transform: scale(1, 1);
 }
 
-
 /* All the team member content box */
 .team-content {
-    height: 80px;
-    width: 100%;
+    height: 7vw;
+    width: 20vw;
     position: absolute;
     overflow: hidden;
     bottom: 0;
     transition: all 0.4s;
-    background: #2c87d2;
+    background: var(--jay-blue);
     z-index: 5;
-
-}
-
-.single-team:hover .team-content {
-    height: 340px;
-    transition: 0.6s;
 }
 
 /* The teammate name and position */
 .team-info {
     text-align: center;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 8px 5px 10px;
     transition: all .5s;
+    color: white;
 }
 
 .team-info h3 {
-    padding-top: 4px;
-    font-size: 32px;
+    text-transform: uppercase;
+    font-size: 1.8vw;
     font-weight: 800px;
-    color: white;
+    padding: 2%;
 }
 
 .team-info h4 {
-    font-size: 12px;
-    color: white;
+    font-size: 1vw;
+    padding: 1%;
 }
 
 .team-info li {
-    font-size: 12px;
-    line-height: 16px;
-    padding-top: 8px;
-    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding-top: 1vw;
     text-align: left;
 }
-
-
 
 /* Interactive hovering and style changes */
 .single-team:hover .team-content {
     background: #222;
+    height: 31.2vw;
+    transition: 0.6s;
 }
 
 .single-team:hover .team-content .team-info h3 {
-    color: #50aefa;
+    color: var(--sky-blue);
 }
-
-
-.single-team .team-content .team-info h3 {
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 22px;
-    margin: 5px;
-}
-
-
 
 @media screen and (max-width: 1024px) {
     .member-gallery {
@@ -119,20 +102,52 @@
         flex-direction: column;
     }
 
-    .team-info h3 {
-        padding-top: 0px;
-        font-size: 16px;
-        font-weight: 800px;
-        color: rgb(192, 0, 0);
-    }
-    
     .team-img img {
         width: 100%;
-        aspect-ratio: 5.5/7;
-        height: 95%;
+        height: 100%;
+        aspect-ratio: 6/8;
         object-fit: cover;
         transition: 0.3s;
     }
 
- 
+    .team-content {
+        height: 24%;
+        width: 100%;
+        aspect-ratio: 2/8;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .team-info h3 {
+        text-transform: uppercase;
+        font-size: 4vw;
+        font-weight: 800px;
+        padding: 2%;
+    }
+
+    .team-info h4 {
+        font-size: 2vw;
+        padding: 1%;
+    }
+
+    .team-info li {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        padding-top: 2vw;
+        text-align: left;
+    }
+
+    /* Interactive hovering and style changes */
+    .single-team:hover .team-content {
+        background: #222;
+        height: 58vw;
+        transition: 0.8s;
+    }
+
+    .single-team:hover .team-content .team-info h3 {
+        color: var(--sky-blue);
+    }
+
+
+
 }
