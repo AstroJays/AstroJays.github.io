@@ -474,6 +474,7 @@ nav .fa {
     background-image: url(images/about_us/competitions/tripoli_sasha_rocket.JPG);
     min-height: 100vh;
 
+    
     /* Scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -495,7 +496,7 @@ nav .fa {
 }
 
 .parallax-text-box h2 {
-    font-size: 2vw;
+    font-size: 3.5vw;
     color: var(--sky-blue);
     padding-top: 0px;
     text-align: center;
@@ -583,7 +584,7 @@ nav .fa {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     text-align: center;
-    font-size: 6vw;
+    font-size: 2.2vw;
 }
 
 .sub-options-container:hover {
@@ -598,12 +599,22 @@ nav .fa {
 
 /* Parallax phone fitting */
 @media screen and (max-width: 1024px) {
-    .parallax-text-box {
-        margin-top: 6vw;
+
+    .parallax {
+        min-height: 100vh;
+        width: 100vw;
     }
 
     .parallax-text-box h1 {
         font-size: 6vw;
+    }
+
+    .parallax-text-box h2 {
+        font-size: 3.5vw;
+    }
+
+    .parallax-text-box p {
+        font-size: 3vw;
     }
 
     .home-options-grid {
