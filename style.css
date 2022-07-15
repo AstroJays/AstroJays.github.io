@@ -626,6 +626,7 @@ nav .fa {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2.5vw;
+        border: solid 3px var(--sky-blue);
     }
 
     .home-options-container h1 {
@@ -635,6 +636,7 @@ nav .fa {
     .home-options-container h3 {
         font-size: 3.5vw;
     }
+
 
     .sub-options-container h3 {
         font-size: 0.8rem;
