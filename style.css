@@ -260,6 +260,7 @@ nav .fa {
     }
 
     .nav {
+        height: 60px;
         margin-right: -10rem;
     }
 
@@ -301,7 +302,7 @@ nav .fa {
     }
   
     #bar {
-        padding-top: 28px;
+        padding-top: 32px;
     }
 
     #logo {
