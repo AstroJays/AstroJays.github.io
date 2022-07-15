@@ -2,68 +2,109 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 
 html body {
     background-color: #222;
+    font-size: 58px;
+}
+
+:root {
+    --sky-blue: #50aefa;
+    --jay-blue: #5091c6;
+    --lightning-blue: rgba(0, 102, 255, 0.9);
+    --dark-navy: rgba(4, 11, 36, 0.92);
+    --navy:rgb(6, 38, 59);
+    --smoke-white:rgba(255, 255, 255, 0.82);
+
 }
 
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background_02.jpg);
+    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    margin-bottom: 84px;
     z-index: 1;
     overflow: auto;
 }
 
 .sub-header {
-    height: 55vh;
+    height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background_02.jpg);
+    background-image: linear-gradient(rgba(4, 13, 44, 0.68), rgba(16, 39, 66, 0.205)), url(images/index/home_background.jpg);
     background-position: center;
     background-size: cover;
+    text-align: center;
+}
+
+#proj-cover {
+    height: 55vh;
+}
+
+/* Home title font */
+.text-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
 }
 
-.sub-header h1 {
-    margin-top: 50px;
-    font-size: 64px;
-    overflow: auto;
+.text-box h1 {
+    font-size: 4rem;
+}
+
+.text-box h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 2%;
+    line-height: 180%;
+}
+
+/* Other pages title font */
+.text-box-sub {
+    width: 90%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
 }
 
 .text-box-sub h1 {
-    padding-top: -100px;
-    padding-bottom: 10px;
-    font-size: 60px;
+    font-size: 5vw;
+    overflow: auto;
+    padding-bottom: 1%;
 }
 
 .text-box-sub h2 {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
+/* The nav bar */
 nav {
     height: 50px;
-    background-image: linear-gradient(rgba(4, 11, 36, 0.92), rgba(6, 23, 49, 0.943));
+    background-color: var(--dark-navy);
     display: flex;
     padding: 2% 6%;
     margin-top: -30px;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-
 }
 
-/* We change the size of logo in the syle sheet so that it works with all images. */
+/* The AJ logo */
 nav img {
     width: 80px;
     margin-top: 22px;
-    padding-top: 14px;
+    padding-top: 18px;
 }
 
 .nav-links {
@@ -71,28 +112,26 @@ nav img {
     text-align: right;
 }
 
-/* Horizontal styling of the navigation bar. */
+/* Nav bar text styling */
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
-    margin-top: 32px;
+    margin-top: 3%;
     position: relative;
 }
 
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
-
+    font-size: 1rem;
 }
 
 .nav-links ul li::after {
     content: '';
-    /*hide the bar until it's clicked */
     width: 0%;
-    height: 3px;
-    background: #50aefa;
+    height: 1%;
+    background: var(--sky-blue);
     display: block;
     margin: auto;
     transition: 0.3s;
@@ -100,6 +139,7 @@ nav img {
 
 .nav-links ul li:hover::after {
     width: 100%;
+    transition: 0.3s;
 }
 
 
@@ -126,7 +166,7 @@ nav img {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .dropdown-content a {
@@ -139,7 +179,8 @@ nav img {
 }
 
 .dropdown-content a:hover {
-    background-color: #1f3160
+    background-color: #1f3160;
+    transition: 0.3s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -152,38 +193,12 @@ nav img {
     z-index: 1;
     position: fixed;
     top: 80;
-    width: calc(100% - 12%) !important;
+    width: calc(88%) !important;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky+.content {
     padding-top: -102px;
-}
-
-
-/* Normal Text boxes */
-.text-box {
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.text-box h1 {
-    margin-top: 30px;
-    font-size: 76px;
-}
-
-.text-box p {
-    margin: 10px 0 40px;
-    font-size: 18px;
-    font-weight: 400px;
-    line-height: 27px;
-    padding: 3px;
-    color: #fff;
 }
 
 /* the "contact us" button */
@@ -192,8 +207,7 @@ nav img {
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
-    padding: 12px 34px;
-    font-size: 18px;
+    padding: 0.8rem 1.8rem;
     font-weight: 400px;
     background: transparent;
     position: relative;
@@ -201,7 +215,7 @@ nav img {
 }
 
 .hero-btn:hover {
-    background: #5091c6;
+    background: var(--jay-blue);
     transition: 0.4s;
 }
 
@@ -213,27 +227,30 @@ nav .fa {
 /* Window accomodation for small device */
 @media(max-width: 1024px) {
     .text-box h1 {
-        font-size: 24px;
+        font-size: 8vw;
     }
 
-    .text-box p {
-        font-size: 16px;
+    .text-box h2 {
+        font-size: 0.8rem;
+    }
+
+    .text-box-sub {
+        top: 30%;
     }
 
     .text-box-sub h1 {
-        font-size: 24px;
-        margin-top: 40px;
+        font-size: 8vw;
     }
 
     .text-box-sub h2 {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
-        font-size: 16px;
+        font-size: 3vw;
     }
 
-    .sub-header {
-        height: 35vh;
+    .sub-header, #proj-cover {
+        height: 65vh;
     }
 
     .hero-btn {
@@ -243,11 +260,11 @@ nav .fa {
     }
 
     .nav {
-        margin-right: -180px;
+        margin-right: -10rem;
     }
 
     .sticky {
-        width: calc(100% - 12%) !important;
+        width: calc(88%) !important;
     }
 
     .nav-links ul li {
@@ -256,7 +273,7 @@ nav .fa {
 
     .nav-links {
         position: fixed;
-        background: #5091c6;
+        background: var(--jay-blue);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -275,26 +292,25 @@ nav .fa {
         display: block;
         color: #fff;
         margin: 10px;
-
-        font-size: 22px;
+        font-size: 1.2rem;
         cursor: pointer;
+    }
+
+    .fa-times {
+        padding-left: 20px;
+    }
+  
+    #bar {
+        padding-top: 28px;
+    }
+
+    #logo {
+        width: 50px;
     }
 
     .nav-links ul {
         padding: 20px;
         margin-top: 50px;
-    }
-
-    #bar {
-        padding-top: 28px;
-    }
-
-    #times {
-        padding-left: 20px;
-    }
-
-    #logo {
-        width: 50px;
     }
 
 }
@@ -319,8 +335,8 @@ nav .fa {
     margin: auto;
     text-align: left;
     z-index: 1;
-    margin-top: 60px;
-    border-top: 3px solid #50aefa;
+    margin-top: 10vh;
+    border-top: 3px solid var(--sky-blue);
     justify-content: space-between;
 }
 
@@ -332,32 +348,32 @@ nav .fa {
     width: 100%;
 }
 
+/* Section text */
 .content {
     width: 54%;
     word-wrap: break-word;
     position: relative;
-    margin-top: 35px;
+    margin-top: 8vh;
 }
 
 .content h1 {
-    font-size: 42px;
-    color: rgba(255, 255, 255, 0.896);
-    margin-top: -16px;
+    font-size: 2rem;
+    color: var(--smoke-white);
+    margin-top: -1rem;
 }
 
 .content h2 {
-    font-size: 20px;
-    color: #50aefa;
-    margin-top: -12px;
+    font-size: 1.1rem;
+    color: var(--sky-blue);
+    margin-top: -0.6rem;
     margin-bottom: 4px;
     display: inline-block;
     position: relative;
 }
 
 .content p {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.82);
-    line-height: 28px;
+    color: var(--smoke-white);
+    line-height: 1.5rem;
     display: inline-block;
     position: relative;
 }
@@ -368,16 +384,15 @@ nav .fa {
 }
 
 .content li {
-    color: rgba(255, 255, 255, 0.82);
-    line-height: 32px;
-    font-size: 18px;
+    color: var(--smoke-white);
+    line-height: 1.8rem;
     word-wrap: break-word;
     position: relative;
 }
 
 #proj-info-list {
-    border: solid 3px #50aefa;
-    margin-top: 30px;
+    border: solid 3px var(--sky-blue);
+    margin-top: 6vh;
     padding-left: 3%;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -386,7 +401,7 @@ nav .fa {
 /* wiki image column */
 .image-box {
     width: 42%;
-    margin-top: 35px;
+    margin-top: 8vh;
 }
 
 .image-box img {
@@ -396,7 +411,7 @@ nav .fa {
 }
 
 #alive-image:hover {
-    box-shadow: 0 0 14px 0px rgba(0, 102, 255, 0.9);
+    box-shadow: 0 0 14px 0px var(--lightning-blue);
     transition: 0.2s;
 }
 
@@ -419,7 +434,7 @@ nav .fa {
     .section-box {
         width: 90%;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 6vh;
     }
 
     .content, .image-box {
@@ -435,24 +450,21 @@ nav .fa {
     }
 
     .content h1 {
-        font-size: 26px;
-        margin-top: -26px;
-        padding-bottom: 0px;
+        font-size: 6vw;
     }
 
     .content h2 {
         font-size: 16px;
-        margin-top: -20px;
+        margin-top: -3.5vw;
         padding-bottom: 0px;
     }
 
-
     .content p {
-        font-size: 16px;
+        font-size: 0.9rem;
     }
 
     .image-box {
-        margin-top: 35px;
+        margin-top: 6vw;
     }
 }
 
@@ -460,7 +472,7 @@ nav .fa {
 .parallax {
     /* The image used */
     background-image: url(images/about_us/competitions/tripoli_sasha_rocket.JPG);
-    min-height: 700px;
+    min-height: 100vh;
 
     /* Scrolling effect */
     background-attachment: fixed;
@@ -470,21 +482,21 @@ nav .fa {
 }
 
 .parallax-text-box {
-    background-color: rgb(6, 38, 59);
+    background-color: var(--navy);
     display: grid;
-    padding-bottom: 40px;
+    padding-bottom: 4.5vw;
 }
 
 .parallax-text-box h1 {
-    font-size: 36px;
-    color: rgba(255, 255, 255, 0.896);
-    padding-top: 20px;
+    font-size: 4vw;
+    color: var(--smoke-white);
+    padding-top: 1.5vw;
     text-align: center;
 }
 
 .parallax-text-box h2 {
-    font-size: 24px;
-    color: #50aefa;
+    font-size: 2vw;
+    color: var(--sky-blue);
     padding-top: 0px;
     text-align: center;
 }
@@ -493,21 +505,20 @@ nav .fa {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 18px;
-    line-height: 28px;
-    color: rgba(255, 255, 255, 0.896);
-    padding-top: 10px;
+    line-height: 1.5rem;
+    color: var(--smoke-white);
+    padding-top: 1vw;
     text-align: center;
 }
 
 /* Some buttons on the home screen */
 .home-options-grid {
-    border-bottom: 3px solid #50aefa;
+    border-bottom: 3px solid var(--sky-blue);
     width: 90%;
-    margin-top: 30px;
+    margin-top: 1vw;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 30px;
+    padding-bottom: 2vw;
     display: flex;
     justify-content: space-between;
 }
@@ -516,7 +527,7 @@ nav .fa {
     /* the container element */
     position: relative;
     cursor: pointer;
-    border: solid 5px #50aefa;
+    border: solid 5px var(--sky-blue);
     background-color: rgba(0, 102, 255, 0.2);
     flex-basis: 31%;
 }
@@ -524,12 +535,12 @@ nav .fa {
 .home-options-container h1 {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    font-size: 36px;
+    margin-bottom: 0.9vw;
+    font-size: 2.5vw;
 }
 
 .home-options-container:hover {
-    box-shadow: 0 0 14px 0px rgba(0, 102, 255, 0.9);
+    box-shadow: 0 0 14px 0px var(--lightning-blue);
     transition: 0.2s;
 }
 
@@ -543,7 +554,6 @@ nav .fa {
 }
 
 /* Prev and next buttons */
-
 .sub-options-grid {
     width: 90%;
     margin-top: 80px;
@@ -558,7 +568,7 @@ nav .fa {
     /* the container element */
     position: relative;
     cursor: pointer;
-    border: solid 2px #50aefa;
+    border: solid 2px var(--sky-blue);
     background-color: rgba(0, 102, 255, 0.2);
     flex-basis: 48%;
 }
@@ -573,11 +583,11 @@ nav .fa {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     text-align: center;
-    font-size: 24px;
+    font-size: 6vw;
 }
 
 .sub-options-container:hover {
-    box-shadow: 0 0 8px 0px rgba(0, 102, 255, 0.9);
+    box-shadow: 0 0 8px 0px var(--lightning-blue);
     transition: 0.2s;
 }
 
@@ -589,21 +599,19 @@ nav .fa {
 /* Parallax phone fitting */
 @media screen and (max-width: 1024px) {
     .parallax-text-box {
-        margin-top: 40px;
+        margin-top: 6vw;
     }
 
     .parallax-text-box h1 {
-        font-size: 24px;
+        font-size: 6vw;
     }
 
     .home-options-grid {
         margin-top: 3%;
         flex-direction: column;
-        padding-bottom: 15px;
     }
 
     .home-options-container {
-        height: 100px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -611,15 +619,15 @@ nav .fa {
     }
 
     .home-options-container h1 {
-        font-size: 24px;
+        font-size: 4vw;
     }
 
-    .sub-options-grid {
-        margin-top: 30px;
+    .home-options-container h3 {
+        font-size: 3.5vw;
     }
 
     .sub-options-container h3 {
-        font-size: 16px;
+        font-size: 0.8rem;
     }
 }
 
@@ -629,9 +637,9 @@ nav .fa {
     bottom: 0;
     width: 100%;
     height: 40px;
-    background-color: rgb(6, 38, 59);
+    background-color: var(--dark-navy);
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #fff;
     padding: 10px 0px 30px 0px;
     z-index: 1;
 }
@@ -704,11 +712,12 @@ nav .fa {
 .contact-col input, .contact-col textarea {
     width: 100%;
     padding: 15px;
-    margin-bottom: 17px;
+    margin-bottom: 1rem;
     outline: none;
     border: 1px solid #5091c6;
     box-sizing: border-box;
 }
+
 
 @media(max-width: 1024px) {
     .contact-us {
