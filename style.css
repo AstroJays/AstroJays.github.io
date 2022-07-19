@@ -302,12 +302,12 @@ nav .fa {
   
     #bar {
         font-size: 1.4rem;
-        padding-top: 32px;
+        padding-top: 30px;
     }
 
     #logo {
-        width: 45px;
-        padding-bottom: 1px;
+        width: 40px;
+        padding-bottom: 2px;
     }
 
     .nav-links ul {
@@ -745,14 +745,15 @@ nav .fa {
     }
 
     .footer {
-        height: 60px;
+        height: 4vw;
     }
 
     .footer p {
         padding-bottom: 3vw;
     }
     .icons .fa {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
 }
+
