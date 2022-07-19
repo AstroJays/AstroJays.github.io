@@ -8,6 +8,7 @@
 #caret {
     font-family: 'Zapf Dingbats';
 }
+
 html body {
     background-color: #222;
     font-size: 58px;
@@ -753,6 +754,10 @@ nav .fa {
 
     .footer {
         height: 4vw;
+    }
+
+    .footer a {
+        text-decoration: none;
     }
 
     .footer p {
