@@ -451,11 +451,11 @@ nav .fa {
     }
 
     .content h1 {
-        font-size: 2.2rem;
+        font-size: 8vw;
     }
 
     .content h2 {
-        font-size: 1rem;
+        font-size: 6vw;
         margin-top: -3.5vw;
         padding-bottom: 0px;
     }
@@ -626,18 +626,17 @@ nav .fa {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 2.5vw;
+        margin-bottom: 4vw;
         border: solid 3px var(--sky-blue);
     }
 
     .home-options-container h1 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .home-options-container h3 {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
-
 
     .sub-options-container h3 {
         font-size: 0.8rem;
