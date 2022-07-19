@@ -465,7 +465,7 @@ nav .fa {
         padding-bottom: 0px;
     }
 
-    .content p {
+    .content p, li{
         font-size: 0.9rem;
     }
 
@@ -764,7 +764,7 @@ nav .fa {
         padding-bottom: 3vw;
     }
     .icons .fa {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 }
