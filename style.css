@@ -541,7 +541,7 @@ nav .fa {
 .home-options-container h1 {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0.9vw;
+    margin-bottom: 1.2vw;
     font-size: 2.5vw;
 }
 
@@ -604,7 +604,6 @@ nav .fa {
 
 /* Parallax phone fitting */
 @media screen and (max-width: 1024px) {
-
     .parallax {
         min-height: 100vh;
         width: 100vw;
