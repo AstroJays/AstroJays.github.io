@@ -148,7 +148,6 @@ nav img {
     background-color: transparent;
     color: #fff;
     padding: 0px;
-    font-size: 20px;
     border: none;
     cursor: pointer;
 }
@@ -239,7 +238,7 @@ nav .fa {
     }
 
     .text-box-sub h1 {
-        font-size: 8vw;
+        font-size: 10vw;
     }
 
     .text-box-sub h2 {
@@ -451,11 +450,11 @@ nav .fa {
     }
 
     .content h1 {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .content h2 {
-        font-size: 6vw;
+        font-size: 4vw;
         margin-top: -3.5vw;
         padding-bottom: 0px;
     }
@@ -635,8 +634,9 @@ nav .fa {
     }
 
     .home-options-container h3 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
+
 
     .sub-options-container h3 {
         font-size: 0.8rem;
@@ -667,7 +667,7 @@ nav .fa {
     cursor: pointer;
     padding: 4px 0;
     padding-bottom: 1vw;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .fa-heart {
