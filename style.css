@@ -764,7 +764,8 @@ nav .fa {
         padding-bottom: 3vw;
     }
     .icons .fa {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        padding-bottom: 1.5vw;
     }
 
 }
