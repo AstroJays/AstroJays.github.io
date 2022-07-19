@@ -259,7 +259,7 @@ nav .fa {
     }
 
     .nav {
-        height: 80px;
+        height: 90px;
         margin-right: -10rem;
     }
 
@@ -301,11 +301,13 @@ nav .fa {
     }
   
     #bar {
-        padding-top: 38px;
+        font-size: 1.4rem;
+        padding-top: 32px;
     }
 
     #logo {
-        width: 50px;
+        width: 45px;
+        padding-bottom: 1px;
     }
 
     .nav-links ul {
