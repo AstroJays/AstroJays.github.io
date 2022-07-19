@@ -429,6 +429,7 @@ nav .fa {
 }
 
 #govorun iframe{
+    text-align: center;
     border-top: none;
     width: 100%;
     margin-left: auto;
