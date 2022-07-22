@@ -212,10 +212,10 @@
     <script>
         $(document).ready(function ($) {
             var deviceAgent = navigator.userAgent.toLowerCase();
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                $('#ms-switch').attr('href', 'about_us/milestones_apple.html');
-            } else {
+            if (typeof screen.orientation !== 'undefined') {
                 $('#ms-switch').attr('href', 'about_us/milestones.html');
+            } else {
+                $('#ms-switch').attr('href', 'about_us/milestones_apple.html');
             }
         });
     </script>
