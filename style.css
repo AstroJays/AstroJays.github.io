@@ -491,13 +491,18 @@ nav .fa {
 .parallax-text-box {
     background-color: var(--navy);
     display: grid;
+    margin-top: 0rem;
     padding-bottom: 4.5vw;
+}
+
+#ms {
+    margin-top: -1rem;
 }
 
 .parallax-text-box h1 {
     font-size: 4vw;
     color: var(--smoke-white);
-    padding-top: 1.5vw;
+    padding-top: 3vw;
     text-align: center;
 }
 

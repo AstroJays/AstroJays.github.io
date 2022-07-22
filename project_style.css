@@ -1,21 +1,25 @@
 
 /* Wide image box for the whole rocket */
-
 .collage-box {
-    width: 90%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6vw;
+    margin-top: 4vw;
+}
+
+.collage-box img {
+    width: 100%;
 }
 
 #big-box {
     width: 100%;
 }
 
-.collage-box img {
-    object-fit: cover;
+#im-ms {
+    margin-top: 0vw;
     width: 100%;
-    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .collage-box iframe {
@@ -25,3 +29,11 @@
     margin: auto;
 }
 
+
+.big-im-box {
+    width:90%;
+}
+
+.big-im-box img {
+    width: 100%;
+}
