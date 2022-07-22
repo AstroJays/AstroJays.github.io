@@ -33,6 +33,12 @@
                             <div class="dropdown-content">
                                 <a href="about_us/subsystems.html">Subsystems</a>
                                 <a href="about_us/competitions.html">Competitions</a>
+
+
+                                <a id="ms-switch" href="">Milestones</a>
+
+
+
                                 <a href="about_us/milestones.html">Milestones</a>
                             </div>
                         </div>
@@ -207,6 +213,21 @@
         }
         window.addEventListener("scroll", reveal);
     </script>
+
+    <!-- JS for iphone switch -->
+    <script>
+    $(document).ready(function($){
+        var deviceAgent = navigator.userAgent.toLowerCase();
+        var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+        if (agentID) {
+            $('#ms-switch').attr('href', 'about_us/milestones_apple.html');
+        }else
+         { 
+            $('#ms-switch').attr('href', 'about_us/milestones.html');
+         }
+    });
+    </script>
+
 </body>
 
 </html>
