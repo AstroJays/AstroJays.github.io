@@ -1,146 +1,178 @@
-<!DOCTYPE html>
-<html>
+---
+title: Contact
+heading: Get in touch today
+description: We'd love to help you improve your sales.
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about_us_style.css">
+map:
+  latitude: -45.8787605
+  longitude: 170.5027976
+  address: "1 George Street, Dunedin, New Zealand"
+  zoom: 13
+---
+<div class="map" id="map"></div>
 
-    <!-- The font is generated from Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/2442adcce2.js" crossorigin="anonymous"></script>
 
-</head>
+<div class="contact-box">
+	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+		<input type="hidden" name="_to" value="support@example.com" />
+		<input type="text" name="_gotcha" style="display: none;">
 
-<body>
-    <!-- Sub Folder for CS Project Page-->
-    <section class="sub-header">
-        <nav>
-            <!-- able to click on the logo and go to main page-->
-            <a href="index.html"><img src="images/astrojays_logo.png" id="logo"></a>
-            <div class="nav-links" id="navLinks">
-                <!-- Add some links here-->
-                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- the closing icon-->
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">ABOUT US &#11167 </button>
-                            <div class="dropdown-content">
-                                <a href="about_us/subsystems.html">Subsystems</a>
-                                <a href="about_us/competitions.html">Competitions</a>
-                                <a href="about_us/milestones.html">Milestones</a>
-                            </div>
-                        </div>
-                    </li>
+		<label for="name">Full Name</label>
+		<input type="text" name="name" id="name" placeholder="Enter your name..." />
 
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">PROJECTS &#11167 </button>
-                            <div class="dropdown-content">
-                                <a href="projects/strugglebus.html">Strugglebus</a>
-                                <a href="projects/govorun.html">Govorun</a>
-                                <a href="projects/laika_revenge.html">Laika's Revenge</a>
-                                <a href="projects/enzo.html">Enzo</a>
-                            </div>
-                        </div>
-                    </li>
+		<label for="email">Email Address</label>
+		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
 
-                    <li><a href="media.html">MEDIA</a></li>
-                    <li><a href="team2.html">OUR TEAM</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" id="bar" onclick="showMenu()"></i>
-        </nav>
+		<label for="message">Message</label>
+		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
-        <div class="text-box-sub">
-            <h1>Contact Us</h1>
-            <h2> Our workshop is on the JHU Homewood Campus!</h2>
-        </div>
-        </div>
-    </section>
+		<input type="submit" value="Send Message" />
+	</form>
 
-    <!-- Contact Us Content-->
-    <section class="location">
-        <iframe style="filter: invert(92%)"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.3734519281415!2d-76.62508958550703!3d39.32512362922463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8058eb1d4beef%3A0xd830df190269a08f!2sWyman%20Park%20Building!5e0!3m2!1sen!2sus!4v1642375268457!5m2!1sen!2sus"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+	<div class="contact-details">
+		<h3 class="editable">Address</h3>
+		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
-    <section class="contact-us">
+		<h3 class="editable">Email</h3>
+		<p><a href="mailto:support@example.com">support@example.com</a></p>
+	</div>
+</div>
 
-        <div class="contact-col">
-            <div>
-                <i class="fa fa-home" aria-hidden="true"></i>
-                <span>
-                    <h5>3400 N Charles St., Wyman Park Building Rm.154</h5>
-                    <p>Baltimore, MD 21218, USA</p>
-                </span>
-            </div>
+<script type="text/javascript">
+	window.mapData = {{ page.map | jsonify }};
 
-            <div>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                    <h5>hopkinsrocketry@gmail.com</h5>
-                    <p>Monday to Saturday, 10AM to 6PM</p>
-                </span>
-            </div>
+	function initMap() {
+		var myOptions = {
+			scrollwheel: false,
+			draggable: false,
+			panControl: false,
+			disableDefaultUI: true,
+			styles: [{
+				"featureType": "all",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"saturation": 36
+				}, {
+					"color": "#000000"
+				}, {
+					"lightness": 40
+				}]
+			}, {
+				"featureType": "all",
+				"elementType": "labels.text.stroke",
+				"stylers": [{
+					"visibility": "on"
+				}, {
+					"color": "#000000"
+				}, {
+					"lightness": 16
+				}]
+			}, {
+				"featureType": "all",
+				"elementType": "labels.icon",
+				"stylers": [{
+					"visibility": "off"
+				}]
+			}, {
+				"featureType": "administrative",
+				"elementType": "geometry.fill",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 20
+				}]
+			}, {
+				"featureType": "administrative",
+				"elementType": "geometry.stroke",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 17
+				}, {
+					"weight": 1.2
+				}]
+			}, {
+				"featureType": "landscape",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 20
+				}]
+			}, {
+				"featureType": "poi",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 21
+				}]
+			}, {
+				"featureType": "road.highway",
+				"elementType": "geometry.fill",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 17
+				}]
+			}, {
+				"featureType": "road.highway",
+				"elementType": "geometry.stroke",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 29
+				}, {
+					"weight": 0.2
+				}]
+			}, {
+				"featureType": "road.arterial",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 18
+				}]
+			}, {
+				"featureType": "road.local",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 16
+				}]
+			}, {
+				"featureType": "transit",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 19
+				}]
+			}, {
+				"featureType": "water",
+				"elementType": "geometry",
+				"stylers": [{
+					"color": "#000000"
+				}, {
+					"lightness": 17
+				}]
+			}],
+			zoom: window.mapData.zoom,
+			maxZoom: window.mapData.zoom,
+			minZoom: window.mapData.zoom,
+			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById("map"), myOptions);
+		marker = new google.maps.Marker({
+			map: map,
+			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
+		});
 
-            <div>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <span>
-                    <h5><a href="https://www.instagram.com/hopkinsrocketry/?hl=en" target="_blank"
-                            rel="noopener noreferrer" style="color:rgba(240, 255, 255, 0.89)"> @hopkinsrocketry</a>
-                    </h5>
-                    <p>Find us on Instagram!</p>
-                </span>
-            </div>
-        </div>
-
-        <!--Contact form not used because the form php isn't working. -->
-        <div class="contact-col">
-            <form action="mailto:hopkinsrocketry@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Enter your name" required>
-                <input type="email" name="email" placeholder="Enter email address" required>
-                <input type="text" name="subject" placeholder="Enter the subject" required>
-                <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                <button type="submit" class="hero-btn blue-btn" style="margin-right: 10px;"> Send Message </button>
-                <button type="reset" class="hero-btn blue-btn-right"> Reset</button>
-            </form>
-        </div>
-    </section>
-
-    <div id="section-gap" style="margin-top: 100px;"></div>
-    <!-- Footer -->
-    <section class="footer">
-
-        <div class="icons">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </div>
-
-        <p> Made with <i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 183, 255);"></i> by Joy Yeh & Sasha
-            Khidekel </p>
-    </section>
-
-    <!-- JS for toggle menu -->
-    <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-    </script>
-</body>
-
-</html>
+		google.maps.event.addDomListener(window, "resize", function () {
+			map.setCenter(myOptions.center);
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
