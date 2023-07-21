@@ -7,7 +7,7 @@ description: >-
 <ul class="staff">
 	{% for person in site.staff_members %}
 		<li>
-			<div class="square-image"><img src="{% src=person.image_path %}" alt="{{ person.name }}"/></div>
+			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
 			<div class="name"><a/>{{ person.name }}</a></div>
 			<div class="subsystem">{{ person.subsystem }}</div>
 			<div class="yearmajor">{{ person.yearmajor }}</div>
