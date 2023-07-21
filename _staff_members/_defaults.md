@@ -1,7 +1,7 @@
 ---
 name:
-position:
+subsystem:
 image_path:
-twitter:
+yearmajor:
 blurb:
 ---
