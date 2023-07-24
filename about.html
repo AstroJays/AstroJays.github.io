@@ -8,8 +8,8 @@ description: >-
 	{% for person in site.staff_members %}
 		<li>
 			<div class="square-image"><img src= "{{ person.image_path }}" alt="{{ person.name }}"/></div>
-			<div class="name">{{ person.name }}</div>
-			<div class="subsystem">{{ person.subsystem }}</div>
+			<div class="name"><strong>{{ person.name }}</strong></div>
+			<div class="subsystem">{{ person.position }}</div>
 			<div class="yearmajor">{{ person.yearmajor }}</div>
 		</li>
 	{% endfor %}
