@@ -8,8 +8,14 @@ html, body {
 }
 
 body {
-	font-family: "Roboto", "Roboto", "Roboto", "Roboto";
+	font-family: $Monospace;
 }
+
+code {
+	font-family: $Monospace;
+	font-size: 0.8em;
+  }
+  
 
 a {
 	color: #004496;
