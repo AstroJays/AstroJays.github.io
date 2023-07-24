@@ -1,7 +1,6 @@
 ---
 name:
-subsystem:
+position:
 image_path:
 yearmajor:
-blurb:
 ---
