@@ -21,6 +21,10 @@
 #    link: /
 #    new_window: true
 - links:
+  - name: Instagram
+    link: https://www.instagram.com/hopkinsrocketry
+    social_icon: Instagram
+    new_window: true
   - name: Facebook
     link: https://www.facebook.com/HopkinsRocketry
     new_window: true
