@@ -51,6 +51,14 @@ defaults:
         image_path:
           width: 600
           height: 600
+    scope:
+      path: ""
+      type: "alumni"
+    values:
+      _options:
+        image_path:
+          width: 600
+          height: 600
   - scope:
       path: ""
     values:
