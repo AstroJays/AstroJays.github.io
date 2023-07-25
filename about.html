@@ -17,14 +17,14 @@ description: >-
 
 <h2>Team Alumni</h2>
 
-<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_alumni/" class="btn"><strong>&#9998;</strong> Manage alumni</a></p>
-<ul class="alumni">
-	{% for person in site.alumni %}
+<!-- <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_alumni/" class="btn"><strong>&#9998;</strong> Manage alumni</a></p> -->
+<ul class="alums">
+	{% for alum in site.alumni %}
 		<li>
-			<div class="square-image"><img src= "{{ person.image_path }}" alt="{{ person.name }}"/></div>
-			<div class="name"><strong>{{ person.name }}</strong></div>
-			<div class="yearmajor">{{ person.yearmajor }}</div>
-			<div class="subsystem">{{ person.position }}</div>
+			<div class="square-image"><img src= "{{ alum.image_path }}" alt="{{ alum.name }}"/></div>
+			<div class="name"><strong>{{ alum.name }}</strong></div>
+			<div class="yearmajor">{{ alum.yearmajor }}</div>
+			<div class="subsystem">{{ alum.position }}</div>
 		</li>
 	{% endfor %}
 </ul>
