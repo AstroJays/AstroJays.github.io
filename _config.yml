@@ -70,6 +70,10 @@ defaults:
     values:
       layout: "default"
   - scope:
+      path: "subsystems.html"
+    values:
+      layout: "default"
+  - scope:
       path: "contact.html"
     values:
       full_width: true
