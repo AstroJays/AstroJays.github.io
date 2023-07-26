@@ -1,6 +1,6 @@
 ---
 name: Matteo Betancourt
 position: Treasurer; Flight Ops Lead
-image_path: /images/team_members/default_temp.png
+image_path: /images/team_members/matteo.png
 yearmajor: B.S. 2025, MechE
 ---
