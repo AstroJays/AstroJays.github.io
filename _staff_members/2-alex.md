@@ -1,6 +1,6 @@
 ---
 name: Alex Ren
 position: VP, Propulsion Lead
-image_path: /images/team_members/alex_pad.png
+image_path: /images/team_members/alexren.jpg
 yearmajor: B.S. MechE, 2024
 ---
