@@ -33,6 +33,8 @@ collections:
   sponsors:
     _hide_content: true
 
+- permalink: pretty
+
 defaults:
   - scope:
       path: ""
