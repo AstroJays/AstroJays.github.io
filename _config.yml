@@ -70,7 +70,7 @@ defaults:
       path: "subsystems.html"
     values:
       layout: "default"
-   - scope:
+  - scope:
       path: "sponsors.html"
     values:
       layout: "default"
