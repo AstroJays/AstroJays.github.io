@@ -33,7 +33,7 @@ collections:
   sponsors:
     _hide_content: true
 
-- permalink: pretty
+permalink: pretty
 
 defaults:
   - scope:
