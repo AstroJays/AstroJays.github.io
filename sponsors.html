@@ -1,0 +1,18 @@
+---
+title: Sponsors
+description: >-
+---
+
+<h2>Team Sponsors</h2>
+
+<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+<ul class="staff">
+    {% for person in site.staff_members %}
+        <li>
+            <div class="square-image"><img src= "{{ person.image_path }}" alt="{{ person.name }}"/></div>
+            <div class="name"><strong>{{ person.name }}</strong></div>
+            <div class="subsystem">{{ person.position }}</div>
+            <div class="yearmajor">{{ person.yearmajor }}</div>
+        </li>
+    {% endfor %}
+</ul>

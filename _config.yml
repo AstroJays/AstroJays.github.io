@@ -73,6 +73,10 @@ defaults:
       path: "subsystems.html"
     values:
       layout: "default"
+   - scope:
+      path: "sponsors.html"
+    values:
+      layout: "default"
   - scope:
       path: "contact.html"
     values:
